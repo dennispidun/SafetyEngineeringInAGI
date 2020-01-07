@@ -1,0 +1,30 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Dies hier ist die Titelseite.                        %%
+%% Auch hier brauchen sie KEINE Änderungen vorzunehmen! %%
+%% Die entsprechenden Angaben werden aus den Variablen  %%
+%% in IIS-Seminar-Vorlage.tex übernommen.               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\thispagestyle{empty}
+\linespread {1.25}\selectfont % eineinhalbfachen Zeilenabstand für diesen Block
+\begin{flushright}
+Universität Hildesheim\\
+\lehrstuhl\\
+\prof\\
+\end{flushright}
+\begin{center}
+\linespread {1.05}\selectfont % 1.25-facher Zeilenabstand
+\vfill
+\LARGE{\vtyp\\*[.1cm]\parbox{0.6\textwidth}{\begin{center}\veranstaltung\end{center}}\\*[.2cm]}
+\large{\textbf{Thema: \thema\\~\\}
+Betreuer: \betreuer\\~\\
+\semester}
+\vfill
+\name\\
+Matrikelnummer: \matr\\
+Studiengang: \studgang\\~\\
+E-Mail: \href{mailto:\email}{\email}\\
+\end{center}
+% Rücksetzen des Seitenzählers
+\setcounter{page}{0}
+\newpage

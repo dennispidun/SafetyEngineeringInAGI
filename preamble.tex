@@ -1,0 +1,79 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Diese Datei sollten Sie nicht anpassen, sie definiert %%
+%% ein Dokument der Form, in der wir es erwarten.        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Schriftgröße, ein- oder zweiseitig, Papierformat, Dokumententyp
+\documentclass[12pt,oneside,a4paper]{scrartcl}
+
+%Seitenränder
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+
+%NDR und Umlaute
+\usepackage{ngerman}
+\usepackage[latin1]{inputenc}
+
+%Kopf- und Fußzeile
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+%Kopfzeile links bzw. innen
+\fancyhead[L]{\name}
+
+%Kopfzeile mittig
+\fancyhead[C]{\thepage}
+
+%Kopfzeile rechts bzw. außen
+\fancyhead[R]{\thema}
+
+%Linie oben
+\renewcommand{\headrulewidth}{0.5pt}
+
+%Für farbige Links
+\usepackage{color}
+
+%Hübsche Schriften im PDF-Viewer
+\usepackage{ae}
+\usepackage{times}
+
+% Brauchbare PDF-Links und angaben im PDF-Header
+\usepackage[pdftex,
+ raiselinks=true,%
+  bookmarks=true,%
+  colorlinks=false,% Gibt man keine gedruckte Version ab, sondern das PDF, sollte man erwägen diesesn Wert auf "true" zu ändern
+  bookmarksopenlevel=1,%
+  bookmarksopen=true,%
+  bookmarksnumbered=true,%
+  hyperindex=true,% 
+  plainpages=false,% correct hyperlinks
+  pdfpagelabels=true,% view TeX pagenumber in PDF reader
+ pdfstartview=FitH]{hyperref}
+%%  pdfborder={0 0 0.5}
+ %%  pdfauthor={\name},
+%%  pdfsubject={\veranstaltung},
+%%  pdfkeywords={\keywords},
+%%  pdftitle={\thema},
+ 
+%Thumbnails im PDF
+\usepackage{thumbpdf}
+
+%hübschere Tabellenabstände
+\usepackage{booktabs}
+
+%diverser mathematischer Kram
+\usepackage{amsmath}
+
+% Für den dinat zitier stil
+\usepackage{natbib}
+
+% Graphiken
+\usepackage[final]{graphicx}
+
+% Verhindern von "Schusterjungen" und "Hurenkindern"
+\clubpenalty = 10000
+\widowpenalty = 10000
+\displaywidowpenalty = 10000
+\tolerance=500 %Zeilenumbruch
+
+
