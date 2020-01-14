@@ -1,0 +1,83 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Angaben zur Person
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\name}{Dennis Pidun}
+\newcommand{\matr}{??????}
+\newcommand{\email}{pidund@uni-hildesheim.de}
+\newcommand{\studgang}{Angewandte Informatik (B.Sc.)}
+\newcommand{\thema}{Safety Engineering in AGI}
+\newcommand{\keywords}{}
+\newcommand{\betreuer}{Dr. Pascal Reuß}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Angaben zum Seminar
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\semester}{Wintersemester 2019/2020}
+\newcommand{\vtyp}{Seminar}
+\newcommand{\veranstaltung}{IIS Seminar}
+\newcommand{\prof}{Prof. Dr. Klaus-Dieter Althoff}
+\newcommand{\lehrstuhl}{Institut für Informatik\\Bereich Intelligente Informationssysteme}
+
+\include{preamble}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Zusatzpakete
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\include{titelseite}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Abstract etc.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Abstract}
+\begin{abstract}\textsl{
+Abstract einfügen.
+}\end{abstract}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Inhaltsverzeichnis
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Inhalt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Einführung}
+\subsection{Motivation}
+\subsection{Machine Ethics}
+\section{Artificial General Intelligence}
+\subsection{Classical Artificial Intelligence}
+\subsection{Verbindung zu ''Strong AI''}
+\subsection{Aktueller Forschungsstand bei AGI-Systems}
+\section{Safety Engineering}
+\subsection{Probleme in AI Engineering}
+\subsection{AI Safety in klassischen AI Systems}
+\subsection{AI Safety in Artificial Superintelligent Systems}
+
+%% Eher nochmal bearbeiten:
+\subsection{Problemlösungsansätze} 
+\subsection{Simulated Areas / Simulations}
+\section{The Artificial Confinementproblem}
+\subsection{Kritik des Confinement Approach}
+\subsection{Mögliche Escape Paths}
+\subsection{Social Engineering Attacks}
+\section{AI Boxing Strategies}
+\subsection{Physical Boxing}
+\subsection{Psychological Boxing}
+\subsection{Kombination mit anderen Limitierungstechniken}
+\section{Fazit}
+\cite{lol}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Einbinden der Quellen
+%% https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex#Reference_guide
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\addcontentsline{toc}{section}{\bibname}
+\bibliography{quellen}
+\bibliographystyle{dinat}
+
+\end{document}
