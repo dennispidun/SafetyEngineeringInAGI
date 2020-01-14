@@ -9,9 +9,9 @@ jobs:
       - name: Compile document
         uses: xu-cheng/latex-action@master
         with:
-          root_file: IIS-Seminar-Vorlage.tex
+          root_file: SafetyEngineeringInAGI.tex
       - name: Upload Artifact
         uses: actions/upload-artifact@v1
         with:
           name: Document
-          path: IIS-Seminar-Vorlage.pdf
+          path: SafetyEngineeringInAGI.pdf
