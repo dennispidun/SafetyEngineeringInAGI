@@ -1,6 +1,3 @@
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Angaben zur Person
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -10,7 +7,7 @@
 \newcommand{\studgang}{Angewandte Informatik (B.Sc.)}
 \newcommand{\thema}{Safety Engineering in AGI}
 \newcommand{\keywords}{}
-\newcommand{\betreuer}{Dr. Pascal Reuß}
+\newcommand{\betreuer}{Dr. Pascal ReuÃŸ}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Angaben zum Seminar
@@ -19,9 +16,12 @@
 \newcommand{\vtyp}{Seminar}
 \newcommand{\veranstaltung}{IIS Seminar}
 \newcommand{\prof}{Prof. Dr. Klaus-Dieter Althoff}
-\newcommand{\lehrstuhl}{Institut für Informatik\\Bereich Intelligente Informationssysteme}
+\newcommand{\lehrstuhl}{Institut fÃ¼r Informatik\\Bereich Intelligente Informationssysteme}
 
 \include{preamble}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Zusatzpakete
@@ -35,7 +35,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Abstract}
 \begin{abstract}\textsl{
-Abstract einfügen.
+Abstract einfÃ¼gen.
 }\end{abstract}
 \newpage
 
@@ -48,76 +48,76 @@ Abstract einfügen.
 % Inhalt
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Einführung}
+\section{EinfÃ¼hrung}
     \subsection{Motivation}
     \subsection{Machine Ethics}
-    //Überarbeiten//    
-    Um die Frage, warum Machine Ethics wichtig sind zu klären, stellen wir uns zunächst ein
+    //Ãœberarbeiten//    
+    Um die Frage, warum Machine Ethics wichtig sind zu klÃ¤ren, stellen wir uns zunÃ¤chst ein
     Scenario vor, welches bereits Patrick Lin \cite[p. 70]{maurer_gerdes_lenz_winner_2015}
     aufgestellt wurde. Hierbei handelt es sich um eine Situation, welche bereits heute auf den 
-    Straßen auftreten kann. Um die moralischen Entscheidungen in dem Prozess des Fahrens zu 
+    StraÃŸen auftreten kann. Um die moralischen Entscheidungen in dem Prozess des Fahrens zu 
     verdeutlichen, stellen wir uns also vor, dass man in einem Auto sitzt und nun eine 
-    Entscheidung treffen muss. Nämlich die Entscheidung, ob man nach links ausweicht und damit
-    ein junges Mädchen umbringt oder ob man nach rechts ausweicht und damit eine ältere 
+    Entscheidung treffen muss. NÃ¤mlich die Entscheidung, ob man nach links ausweicht und damit
+    ein junges MÃ¤dchen umbringt oder ob man nach rechts ausweicht und damit eine Ã¤ltere 
     Seniorin umbringt. Weicht man nicht aus, werden augenblicklich beide Menschen mit in den 
-    Tot gerissen. Dieses Beispiel ist tatsächlich sehr dramatisch gewählt, was jedoch sehr gut
-    verdeutlicht, welche nicht rationalen Entscheidungen getroffen werden müssen. Egal welche 
+    Tot gerissen. Dieses Beispiel ist tatsÃ¤chlich sehr dramatisch gewÃ¤hlt, was jedoch sehr gut
+    verdeutlicht, welche nicht rationalen Entscheidungen getroffen werden mÃ¼ssen. Egal welche 
     Entscheidung hierbei getroffen wird, am Ende stirbt mindestens ein Mensch, was in jeder 
-    Hinsicht einen Verlust darstellt und ohnehin moralisch nicht korrekt wäre. \cite[p. 70]{maurer_gerdes_lenz_winner_2015}
+    Hinsicht einen Verlust darstellt und ohnehin moralisch nicht korrekt wÃ¤re. \cite[p. 70]{maurer_gerdes_lenz_winner_2015}
     Mit seiner Entscheidung kann man letztendlich nur bestimmen, welche Person benachteiligt 
-    wird. In einer solchen Situation jedoch hätte der Mensch ohnehin keine Zeit diese Entscheidung
-    rational zu betrachten. Ferner hätte der Mensch ebenfalls nicht die Möglichkeiten und 
+    wird. In einer solchen Situation jedoch hÃ¤tte der Mensch ohnehin keine Zeit diese Entscheidung
+    rational zu betrachten. Ferner hÃ¤tte der Mensch ebenfalls nicht die MÃ¶glichkeiten und 
     das Wissen gerecht zu entscheiden.
-    //Überarbeiten// 
+    //Ãœberarbeiten// 
     
-    Ein weiteres Problem ist außerdem, dass man nicht genau weiß, welche moralischen Werte man
+    Ein weiteres Problem ist auÃŸerdem, dass man nicht genau weiÃŸ, welche moralischen Werte man
     innerhalb der AGI verankern soll. \cite[p. 1]{yampolskiy2013safety} Es wird daher viel 
     diskutiert, welche moralischen Wertvorstellungen die richtigen sind. In diversen Literaturen
     findet man unter verschiedenen Titeln immer wieder Diskussionen, welche sich genau mit dieser
     Fragestellung auseinandersetzen. Yampolskiy spricht hier davon, dass keine effektiven 
-    Maßnahmen getroffen werden, da sich einerseits viel damit beschäftigt wird, sich andererseits 
+    MaÃŸnahmen getroffen werden, da sich einerseits viel damit beschÃ¤ftigt wird, sich andererseits 
     aber nichts wandelt und kein nutzbares Ergebnis herauskommt \cite[p. 1]{yampolskiy2013safety}.
-    Dies greifen Yampolskiy und Fox nun auf, um über verschiedene Möglichkeiten dieses Problem zu
-    lösen zu diskutieren. 
+    Dies greifen Yampolskiy und Fox nun auf, um Ã¼ber verschiedene MÃ¶glichkeiten dieses Problem zu
+    lÃ¶sen zu diskutieren. 
     
     Laut Yampolskiy und Fox stellt man sich diese Fragen nicht nur bei near-human-AIs, sondern 
     ebenso bei superintelligent AIs \cite[p. 2]{yampolskiy2013safety}. Es ist ferner deutlich 
     bedeutender, so Fox und Yampolskiy, dass man sich gerade im Hinblick auf die immer schnelleren
     Fortschritte in AGIs, Gedanken um die Sicherheit und Moral bei superintelligent AIs macht. 
     So gehen Crnkovic und {\c{C}}{\"u}r{\"u}kl{\"u} in \cite[p. 1]{crnkovic2012robots} ebenfalls
-    davon aus, dass die Betrachtung der Moral in superintelligent AIs eine übergeordnete Rolle 
-    haben muss. Sie sprechen hier davon, dass AIs genau das tun würden, wozu sie programmiert 
-    wurden, was jedoch nicht exakt richtig ist. Hierbei muss man nämlich zwischen simplen Agenten 
-    und komplexeren Agentensystemen unterscheiden, da mit steigender Komplexität und erhöter 
-    Autonomität die moralischen Herausforderungen ebenfalls ansteigen werden. Crnkovic et al
+    davon aus, dass die Betrachtung der Moral in superintelligent AIs eine Ã¼bergeordnete Rolle 
+    haben muss. Sie sprechen hier davon, dass AIs genau das tun wÃ¼rden, wozu sie programmiert 
+    wurden, was jedoch nicht exakt richtig ist. Hierbei muss man nÃ¤mlich zwischen simplen Agenten 
+    und komplexeren Agentensystemen unterscheiden, da mit steigender KomplexitÃ¤t und erhÃ¶ter 
+    AutonomitÃ¤t die moralischen Herausforderungen ebenfalls ansteigen werden. Crnkovic et al
     stellen hier den folgenden Grundsatz auf: ``intelligence must come in conjunction with ethics,
-    through the concept of an artifact ethical by design''. Um dies zu unterstützen, gehe ich daher
-    auf die Möglichkeiten im Bereich des Safety Engineerings ein.
+    through the concept of an artifact ethical by design''. Um dies zu unterstÃ¼tzen, gehe ich daher
+    auf die MÃ¶glichkeiten im Bereich des Safety Engineerings ein.
     
 \section{Artificial General Intelligence}
-    Um besser differenzieren zu können, um welche Art von künstlicher Intelligenz hier behandelt 
+    Um besser differenzieren zu kÃ¶nnen, um welche Art von kÃ¼nstlicher Intelligenz hier behandelt 
     wird, werde ich nachfolgend auf diverse Definitionen eingehen, welche sich mit den verschiedenen
-    Stufen von AI(-Systemen) und deren Abgrenzung beschäftigen. 
+    Stufen von AI(-Systemen) und deren Abgrenzung beschÃ¤ftigen. 
     
     \subsection{Classical Artificial Intelligence}
-    John McCarthy stellte zu Beginn der Era der künstlichen Intelligenz bereits folgende Definition
+    John McCarthy stellte zu Beginn der Era der kÃ¼nstlichen Intelligenz bereits folgende Definition
     auf: ``Getting a computer to do things which, when done by people, are said to involve intelligence.'' 
-    \cite[p. 1]{ertel2016grundkurs}. Dies ist jedoch eine sehr allgemeine Definition für das 
-    Verhalten von Maschinen, die über künstliche Intelligenz verfügen sollen. Daher stelle ich mir 
+    \cite[p. 1]{ertel2016grundkurs}. Dies ist jedoch eine sehr allgemeine Definition fÃ¼r das 
+    Verhalten von Maschinen, die Ã¼ber kÃ¼nstliche Intelligenz verfÃ¼gen sollen. Daher stelle ich mir 
     diverse Fragen dazu, unter Anderem: ``Was ist Intelligenz?'', ``Wie kann eine Maschine intelligentes
     Verhalten zeigen?'' und ``Wann gilt eine Maschine als intelligent?''. All diese Fragen sind die 
-    Grundlage für eine intelligente Maschine, welche eigenständig nach Lösungswegen für ein spezielles
+    Grundlage fÃ¼r eine intelligente Maschine, welche eigenstÃ¤ndig nach LÃ¶sungswegen fÃ¼r ein spezielles
     Problem suchen. Um dies zu testen, stellt Ertel folgende Situation auf: Man stelle sich ein Feld 
     vor, auf dem Roboter wild um herzufahren scheinen. Einige folgen einander, andere weichen einander 
     aus, wieder andere haben keine klaren Ziele. \cite[p. 2]{ertel2016grundkurs} Ertel stellt hier die
     Frage ``Sehen wir hier intelligentes Verhalten?'', wobei nach Definition von McCarthy hier von 
     intelligentem Verhalten gesprochen werden kann. In \ref{pic:braitenberg-vehikel} sieht man zwei 
     simple Verschaltungen dieser sogenannten Breitenberg-Vehikel. Dargestellt werden hier simple 
-    Verschaltungen von Sensoren zu Motoren, welche je nach Lichtstärke unterschiedlich reagieren. 
+    Verschaltungen von Sensoren zu Motoren, welche je nach LichtstÃ¤rke unterschiedlich reagieren. 
     Man kann nun diskutieren, ob dieses Verhalten wirklich ein intelligentes Verhalten ist oder
     nur durch Zufall intelligent erscheint. Ertel behauptet daher, dass die obige Definition nicht
-    ausreichend ist, da KI sich zum Ziel setzt, viele schwierige Probleme zu lösen. In diesem Beispiel
-    wären die Braitenberg-Vehikel mit anderen komplexeren Situationen sichtlich überfordert.
+    ausreichend ist, da KI sich zum Ziel setzt, viele schwierige Probleme zu lÃ¶sen. In diesem Beispiel
+    wÃ¤ren die Braitenberg-Vehikel mit anderen komplexeren Situationen sichtlich Ã¼berfordert.
     
     \begin{figure}[h]\begin{center}
         \includegraphics[width=0.4\textwidth]{figures/braitenberg-roboter.png}
@@ -127,24 +127,24 @@ Abstract einfügen.
     
     Die Aussage von John McCarthy ist schlichtweg nicht genau genug und bestimmt nicht im Detail was
     genau Intelligenz bedeutet. Dabei besteht Intelligenz laut Shukla et al. aus zwei Grundkomponenten: 
-    Zunächst benötigt man die Fähigkeit neue Konzepte zu erlernen, sprich Informationen nicht nur 
-    aufzunehmen sondern auch zu verarbeiten und in Wissen umzuwandeln. Dieses Wissen muss außerdem 
-    korrekt angewendet werden, woraus insgesamt Schlussfolgerungen über die reale Welt gezogen werden 
-    können. \cite{shukla2013applicability} Bei den Braitenberg Vehikeln ist dies jedoch nicht der Fall,
-    alles was sie tun ist eine Information - hier die Lichtstärke der Lichtquelle - aufnehmen und diese
+    ZunÃ¤chst benÃ¶tigt man die FÃ¤higkeit neue Konzepte zu erlernen, sprich Informationen nicht nur 
+    aufzunehmen sondern auch zu verarbeiten und in Wissen umzuwandeln. Dieses Wissen muss auÃŸerdem 
+    korrekt angewendet werden, woraus insgesamt Schlussfolgerungen Ã¼ber die reale Welt gezogen werden 
+    kÃ¶nnen. \cite{shukla2013applicability} Bei den Braitenberg Vehikeln ist dies jedoch nicht der Fall,
+    alles was sie tun ist eine Information - hier die LichtstÃ¤rke der Lichtquelle - aufnehmen und diese
     in mechanische Energie - also die Bewegung eines Motors - umzuwandeln. Man kann hier allerdings nicht
     von Wissen sprechen, da hier keine Informationen erlernt oder in irgendeiner Weise abgelegt werden.
     
-    Um nun zu verstehen, warum man bei intelligenten Maschinen davon spricht, dass sie über eine 
-    künstliche Intelligenz verfügen, muss man sich vor Augen halten in welchen Gebieten diese Maschinen
-    eingesetzt werden sollen. Unteranderem werden diese künstlichen Intelligenzen in Bereichen eingesetzt,
-    wo es die Situation erfordert, dass die menschliche Intelligenz Unterstützung erfahren muss.
+    Um nun zu verstehen, warum man bei intelligenten Maschinen davon spricht, dass sie Ã¼ber eine 
+    kÃ¼nstliche Intelligenz verfÃ¼gen, muss man sich vor Augen halten in welchen Gebieten diese Maschinen
+    eingesetzt werden sollen. Unteranderem werden diese kÃ¼nstlichen Intelligenzen in Bereichen eingesetzt,
+    wo es die Situation erfordert, dass die menschliche Intelligenz UnterstÃ¼tzung erfahren muss.
         
     
     
-    -> Fragen klären und definieren
-    -> Definition für (C)AI finden
-    -> Darauf hinweisen, dass es Grundzüge sind
+    -> Fragen klÃ¤ren und definieren
+    -> Definition fÃ¼r (C)AI finden
+    -> Darauf hinweisen, dass es GrundzÃ¼ge sind
     
     \subsection{Verbindung zu ''Strong AI''}
     \subsection{Aktueller Forschungsstand bei AGI-Systems}
@@ -155,11 +155,11 @@ Abstract einfügen.
     \subsection{AI Safety in Artificial Superintelligent Systems}
 
 %% Eher nochmal bearbeiten:
-    \subsection{Problemlösungsansätze} 
+    \subsection{ProblemlÃ¶sungsansÃ¤tze} 
     \subsection{Simulated Areas / Simulations}
 \section{The Artificial Confinementproblem}
     \subsection{Kritik des Confinement Approach}
-    \subsection{Mögliche Escape Paths}
+    \subsection{MÃ¶gliche Escape Paths}
     \subsection{Social Engineering Attacks}
 \section{AI Boxing Strategies}
     \subsection{Physical Boxing}
