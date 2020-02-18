@@ -52,7 +52,13 @@ Abstract einfügen.
     \subsection{Motivation}
     Die Technologien im Bereich der künstlichen Intelligenz sind ständig im Wandel. Tag für Tag
     werden daher immer wieder neue Entdeckungen gemacht, welche es ermöglichen schwierige Probleme
-    in simplen Schritten zu lösen. //TBC
+    in simplen Schritten zu lösen. Dabei wird die Forschung ständig vor neuen Herausforderungen
+    gestellt, nicht nur werden Abläufe und Prozesse immer schneller, es treten auch Probleme auf,
+    welche es gilt zu identifizieren und im besten Fall vorzubeugen. Diese Arbeit zielt daher
+    darauf ab Konzepte herauszufinden, welche es ermöglichen möglichst gezielt für Sicherheit
+    in der Entwicklung von Artificial General Intelligence zu sorgen. Die Herausforderung eine
+    sichere Umgebung sowohl für Mensch als auch für die Maschine aufzustellen, stellt somit das
+    Kernthema dar. //TBC
 
     \subsection{Machine Ethics}
     //Überarbeiten//    
@@ -103,7 +109,7 @@ Abstract einfügen.
     wird, werde ich nachfolgend auf diverse Definitionen eingehen, welche sich mit den verschiedenen
     Stufen von AI(-Systemen) und deren Abgrenzung beschäftigen. 
     
-    \subsection{Classical Artificial Intelligence}
+    \subsection{Classical Artificial Intelligence}\label{subsec:cai}
     John McCarthy stellte zu Beginn der Era der künstlichen Intelligenz bereits folgende Definition
     auf: ``Getting a computer to do things which, when done by people, are said to involve intelligence.'' 
     \cite[p. 1]{ertel2016grundkurs}. Dies ist jedoch eine sehr allgemeine Definition für das 
@@ -142,17 +148,28 @@ Abstract einfügen.
     Um nun zu verstehen, warum man bei intelligenten Maschinen davon spricht, dass sie über eine 
     künstliche Intelligenz verfügen, muss man sich vor Augen halten in welchen Gebieten diese Maschinen
     eingesetzt werden sollen. Unteranderem werden diese künstlichen Intelligenzen in Bereichen eingesetzt,
-    wo es die Situation erfordert, dass die menschliche Intelligenz Unterstützung erfahren muss \cite[p. 2]{ertel2016grundkurs}.
-    Diese Bereiche sind in jedem Fall speziell und nicht im Generellen zu verstehen. Bei künstlicher Intelligenz
-    kann man daher festhalten, dass sie sich auf bestimmte Bereiche konzentriert und dort generalisierend wirkt.
-    Elaine Rich hielt daher fest: ``Artificial Intelligence is the study of how to make computers do things at which,
-    at the moment, people are better.''. Beispielsweise sind (normale) Computer sehr gut darin Berechnungen in Bruchteilen
-    durchzuführen und diese zu Ergebnissen zu führen \cite[p. 3]{ertel2016grundkurs}. In anderen Bereichen schneiden
-    dahingegen diese Computer wiederum schlecht ab. Abhilfe, so Ertel, könnten daher künstliche Intelligenzen in Form von
-    neuronalen Netzen sein.
-    \subsection{Verbindung zu ''Strong AI''}
+    wo es die Situation erfordert, dass die menschliche Intelligenz Unterstützung erfahren muss
+    \cite[p. 2]{ertel2016grundkurs}. Diese Bereiche sind in jedem Fall speziell und nicht im Generellen
+    zu verstehen. Bei künstlicher Intelligenz kann man daher festhalten, dass sie sich auf bestimmte Bereiche
+    konzentriert und dort generalisierend wirkt. Elaine Rich hielt daher fest: ``Artificial Intelligence
+    is the study of how to make computers do things at which, at the moment, people are better.''.
+    Beispielsweise sind (normale) Computer sehr gut darin Berechnungen in Bruchteilen durchzuführen und
+    diese zu Ergebnissen zu führen \cite[p. 3]{ertel2016grundkurs}. In anderen Bereichen schneiden
+    dahingegen diese Computer wiederum schlecht ab. Abhilfe, so Ertel, könnten daher künstliche Intelligenzen
+    in Form von neuronalen Netzen sein.
 
-    \cite{huang_beef}
+    \subsection{Verbindung zu ''Strong AI''}
+    Viele Quellen berichten, dass man grundsätzlich zwischen Strong AI und Weak AI unterscheidet
+    \cite{huang_beef}. Doch war sind die Bedingungen um eine Künstliche Intelligenz in die Kategorien
+    ``Weak'' und ``Strong'' zu unterteilen?
+
+    Schwache KIs sind, wie wir bereits in \ref{subsec:cai} kennengelernt haben, Systeme welche genau auf
+    eine Anwendung hin konzipiert und trainiert wurden. Diese schwachen Systeme beziehungsweise schwach
+    intelligente Maschinen stellen dabei den großteil dar \city{brendel_2019}. Aber wie groß ist der
+    Schritt um von einer Weak, beziehungsweise schwachen KI zu einer Strong, beziehungsweise starken KI
+    zu gelangen?
+
+
     \subsection{Aktueller Forschungsstand bei AGI-Systems}
     
 \section{Safety Engineering}
