@@ -217,7 +217,8 @@
             dass dies nicht von einer Maschine, sondern von einem Menschen verstanden und verarbeitet wurde, so könnte
             man das Experiment wiederholen, wobei man jedoch die Maschine und den Algorithmus zum Verarbeiten mit einem
             Menschen tauscht.
-            Das sogenannte \textit{chinese room experiment} sagt aus, dass wenn Außenstehende glauben,
+
+            Das sogenannte \textit{chinese room experiment} sagt aus, dass sobald Außenstehende glauben,
             dass in dem Raum ein chinesisch sprechender Mensch sitzt, es keine Strong AI geben kann. Da es demjenigen
             innerhalb des Raumes deutlich an Verständnis der chinesischen Sprache mangelt. Er arbeitet lediglich unter
             Anleitung und hat daher kein tieferes Verständnis für das was er dort macht. Searle definiert
@@ -226,15 +227,62 @@
             wenn es für einen englisch sprechenden Menschen möglich ist, den Turing-Test für die chinesische Sprache mit
             der Hilfe eines Programms beziehungsweise Ablaufplan zu bestehen und kein einziges Wort verstanden hat, dann
             kann auch ein Computer Programm, welches die selben Abläufe durchläuft, kein tieferes Verständnis von der
-            chinesischen Sprache haben \cite{cole_2014}.
+            chinesischen Sprache haben.\cite{cole_2014}
 
+            Einige bekannte Persönlichkeiten wie Elon Musk, Bill Gates und Stephen Hawking prognostizierten, dass es
+            schon in den nächsten zwei Jahrzehnten zu General AIs kommen kann. \cite[p. 20]{Tamboli2019} Wobei dies laut
+            A. Tamboli auch schon deutlich früher geschehen kann.
 
     \section{Safety Engineering}
+        In der Vergangenheit kam es durch diverse Fehler zu verschiedene Umfälle, unteranderem wären da zu nennen:
+        \textit{Therac 25 Failure}, \textit{Ariane 5 Failure} und \textit{Patriot Failure}. Diese Ereignisse hätten
+        durch die richtige Vorsorge verhindert werden können.\cite[p. 185]{Verma2015} Es gibt also das Bedürfniss
+        nach ``Reliable Software'', doch wie lässt sich Zuverlässigkeit von Software definieren?
+
+        IEEE definiert Software Reliability mit ``the probability that a system will not cause a system failure
+        for a specified time under specified conditions. The probability is a function of inputs to, and use of,
+        the system as well as function of the existence of faults in the software. The inputs to the system
+        determine whether existing faults, if any encountered''.\cite[p. 183]{Verma2015} Neben einer sichereren und
+        besser kontrollierbaren Software, erlangt man darüber hinaus ebenfalls weitere Vorteile, so Verma et al.
+        Unteranderem eine höhere Zufriedenheit der Kunden, erhöhte Produktivität, reduzierte Kosten, sowohl für
+        von Kunden gemeldete Probleme, als auch für die entstehenden Wartungen.
+
+        \begin{figure}[h]
+            \begin{center}
+                \includegraphics[width=0.8\textwidth]{figures/testing.png}
+                \caption[Testing Strategies]{Testing Strategien und deren Verbindungen nach \cite{bertolino2019}}
+                \label{pic:testing-strategies}
+            \end{center}
+        \end{figure}
+
+        Eine Möglichkeit Zuverlässigkeit von Software sicherzustellen ist das Testen. Dabei kann man zwischen
+        \textit{Functional Testing}, \textit{Operational Testing} und \textit{Structural Testing} unterscheiden.
+        Jedes dieser Testing Strategien fokussiert dabei einen spezifischen Teil der zu testenden Software. \cite[p. 26]{bertolino2019}
+        Wobei jede Strategie mit den anderen Strategien in Wechselwirkung stehen, wie man in \ref{pic:testing-strategies}
+        erkennnen kann.
+
+        Dieses Vorgehen kennt man bereits aus der klassischen Software Entwicklung und erhält dort großen Zuspruch.
+        Nicht zuletzt wird es durch Praktiken wie Test-Driven-Development in die Tat umgesetzt. \cite[p. 403]{Kollanus2010}
+        Durch diese Art zu entwickeln ergibt sich daher ein konsistentes Verhalten in Bezug zu Zuverlässigkeit und
+        Sicherheit von Software Produkten. Doch lassen sich diese Ansätze ebenfalls auf das Entwickeln von
+        neuronalen Netzwerken, Maschinelles Lernen und Künstlichen Intelligenzen im Speziellen übertragen?
+
         \subsection{Probleme bei AI Engineering}
+        Die Vorteile von Artificial Intelligence werden gerade in der heutigen Zeit immer greifbarer. Daher liegt es
+        nahe, dass die Industrie diese Vorteile nutzt und in die Tat umsetzt. Jedoch tritt man beim Entwickeln von AIs
+        auch gelegentlich auf Probleme. Nicht zuletzt darauf, dass man gerade bei Superintelliges beziehungsweise
+        Artificial General Intelligences ein erhöhtes Sicherheitsrisiko hat. Doch welche Probleme treten im Detail auf?
+
+        Das wohl größte Problem in der aktuellen Zeit und auch noch in den nächsten Jahren, ist wohl die Tatsache, dass
+        man nicht genau bestimmen kann, welche Folgen es haben wird, wenn es zu einer Superintelligence kommt.
+        \cite[p. 21]{Tamboli2019} Es ist nicht bestimmt, was in ein paar Jahren passieren wird. A. Tamboli beschreibt
+        dies als die Dinge, über die wir bisher noch nicht nachgedacht haben, was in gewisser Weise korrekt ist.
+        Man kann leider nie genau bestimmen, welche Folgen eine gewisse neuartige Technologie hat. Ist es daher in
+        Ordnung direkt alles abzulehnen?
+
+
         \subsection{AI Safety in klassischen AI Systems}
         \subsection{AI Safety in Artificial Superintelligent Systems}
-
-        %% Eher nochmal bearbeiten:
         \subsection{Problemlösungsansätze}
         \subsection{Simulated Areas / Simulations}
     \section{The Artificial Confinementproblem}
