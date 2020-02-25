@@ -327,20 +327,51 @@
         Maßnahmen getroffen werden, die dieses in einer effizienten Weise verhindern können. Denn es gilt stets die
         \textit{humanitären Werte} zu erhalten, ohne dass die Moral verloren geht, weder nach Hardware Fehlern noch
         nach Software Fehlern.\cite[p. 7]{yampolskiy2013safety}. Dabei wird bereits aktiv daran geforscht, so
-        Yampolskiy et al.: \citep{gordon1998}
+        Yampolskiy et al.\citep{gordon1998}, \citep{GordonSpears2003} und \citep{Spears}. Doch welche Möglichkeiten
+        bestehen nun, um die KI in einer sicheren Umgebung zu halten? Wie genau werden diese Möglichkeiten in der
+        Realität implementiert? Und wie können Probleme durch Safety Engineering verhindert werden?
 
 
         \subsection{AI Safety in klassischen AI Systems}
 
+        Ausgehend davon, dass Problem bei einer Superintelligenz und im weiteren Sinne eine Artificial General
+        Intelligence die wohl größere Bedrohung für die Menschheit darstellt, fragt man sich ebenfalls wie man
+        sicherstellen kann, dass eine ``normale'' (\textit{weak}) AI korrekt und sicher funktioniert. Wie schon
+        zuvor erwähnt, werden KI Systeme in der heutigen Gesellschaft bereits häufig eingesetzt. Sei es die
+        Stimme im Handy, welche das Flurlicht anschaltet, selbstfahrende autonome Fahrzeuge oder die Amazon
+        Kaufempfehlungen. Sie alle haben gemeinsam, dass sie im Hintergrund einen Ansatz aus dem Gebiet der künstlichen
+        Intelligenz verfolgen, denn sie alle streben intelligentes Verhalten an. Doch man kann KI-Systeme auch in
+        anderen Gebieten einsetzen, wobei hier der \textit{militärische Einsatz von Drohnentechnologie} beispielhaft
+        zu nennen wäre. \cite[p. 251]{Stulpe2018}//TBC
+
+    \section{The Artificial Confinementapproach}
+
+        Eine Möglichkeit eine AI zu beschränken ist ihr die Rechte zu nehmen um mit externen Ressourcen zu interagieren.
+        Dabei stellt das Confinementapproach nach \citep{lampson1973note} die Grundlage, um über Strategien zur Verhinderung
+        von Tragödien bei Artificial General Intelligences zu diskutieren. Man stellt sich dabei vor, dass ein Programm
+        in einer sicheren Umgebung ausgeführt wird und durch ein führendes Programm aufgerufen wird. Das Programm, welches
+        beschränkt werden soll nennt Lampson dabei \textit{service} und das führende Programm nennt er \textit{customer}.
+        Es muss dabei sichergestellt werden, dass der Service dem Customer keinen Schaden zufügen kann \cite{lampson1973note},
+        sodass dieser frei aggieren kann.
+
+        Lampson stellt dabei folgende Regeln auf:
+        \begin{enumerate}
+            \item ``\textit{Total isolation}: A confined program shall make no calls on any other program.''
+            \item ``\textit{Transitivity}: If a confined program calls another program which is not trusted, the
+            called program must also be confined.''
+            \item ``\textit{Masking}: A program to be confined must allow its caller to determine all its inputs into
+            legitimate and covert channels. We say that the channels are masked by the caller.''
+            \item ``\textit{Enforcement}: The supervisor must ensure that a confined program's input to covert
+            channels conforms to the caller's specifications.''
+        \end{enumerate}
 
 
-        \subsection{Problemlösungsansätze}
-        \subsection{Simulated Areas / Simulations}
-    \section{The Artificial Confinementproblem}
         \subsection{Kritik des Confinement Approach}
-        \subsection{Mögliche Escape Paths}
+        \subsection{Mögliche Escape Scenarios}
         \subsection{Social Engineering Attacks}
     \section{AI Boxing Strategies}
+        \subsection{Problemlösungsansätze}
+        \subsection{Simulated Areas / Simulations}
         \subsection{Physical Boxing}
         \subsection{Psychological Boxing}
         \subsection{Kombination mit anderen Limitierungstechniken}
