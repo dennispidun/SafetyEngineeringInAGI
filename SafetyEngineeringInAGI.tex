@@ -348,7 +348,7 @@
 
         Eine Möglichkeit eine AI zu beschränken ist ihr die Rechte zu nehmen um mit externen Ressourcen zu interagieren.
         Dabei stellt das Confinementapproach nach \citep{lampson1973note} die Grundlage, um über Strategien zur Verhinderung
-        von Tragödien bei Artificial General Intelligences zu diskutieren. Man stellt sich dabei vor, dass ein Programm
+        von Tragödien bei Artificial General Intelligences diskutieren zu können. Man stellt sich dabei vor, dass ein Programm
         in einer sicheren Umgebung ausgeführt wird und durch ein führendes Programm aufgerufen wird. Das Programm, welches
         beschränkt werden soll nennt Lampson dabei \textit{service} und das führende Programm nennt er \textit{customer}.
         Es muss dabei sichergestellt werden, dass der Service dem Customer keinen Schaden zufügen kann \cite{lampson1973note},
@@ -365,10 +365,33 @@
             channels conforms to the caller's specifications.''
         \end{enumerate}
 
+        Eingeführt wurden durch Lampson daher auch zwei mögliche Channels, durch die Informationen nach außen treten
+        können.\cite{yampolskiy2012leakproofing} Zunächst die \textit{Legitimate Channels}, die per-design im Confinement
+        Protokoll enthalten sind. Die \textit{Covert Channels} hingegen, sind nicht integriert um darüber zu kommunizieren
+        Yampolskiy et al. redet hier beispielsweise von Möglichkeiten bestimmte Komponenten oder Dinge auszunutzen, die
+        für gewisse Zwecke nicht vorgesehen sind, wie zum Beispiel die Lüftersteuerung, um darüber Morse-Codes zu senden.
 
-        \subsection{Kritik des Confinement Approach}
-        \subsection{Mögliche Escape Scenarios}
-        \subsection{Social Engineering Attacks}
+        \subsection{Mögliche Escape Paths}
+        Im Folgenden werden Mögliche Routen und Wege erläutert, wie eine AGI ausbrechen kann, auch wenn sie durch ein
+        Confinement-Protokoll geschützt wird. Dabei werden die von \citep{yampolskiy2012leakproofing} aufgestellten
+        Möglichkeiten diskutiert und genauer analysiert. Hvistendahl berichtet daher, dass sollte eine AI schlau genug
+        sein, könnte es passieren, dass diese besser mit den Beschränkungen umgehen kann, als die Ersteller selbst.
+        \cite{hvistendahl_2019} Das Zitat ``waking up in a prison built by a bunch of blind 5-year-olds.'' bringt es
+        daher genaustens auf den Punkt. Denn wenn wir eine Künstliche Intelligenz entwickeln können, die die menschliche
+        Intelligenz um weiten übersteigt, dann wird sie mit Hindernissen die wir ihr vorlegen mit Leichtigkeit umgehen
+        können.
+
+        \subsubsection{Physical}
+        Yampolskiy beschreibt diese Art der Angriffe als \textit{System Resource Attacks}, wobei hier davon ausgegangen
+        wird, dass die AGI die physischen Möglichkeiten beispielsweise in Form von Komponenten ausnutzt um darüber zu
+        kommunizieren und sich so einen Weg nach ``draußen'' zu verschaffen.\cite{yampolskiy2012leakproofing} Im Grunde
+        versucht man dabei die Künstliche Intelligenz physisch einzusperren und von vornherein von der Außenwelt
+        auszusperren. Wenn man sich nun vorstellt, dass in der Zukunft, wo es künstliche Intelligenzen, welche weit von
+        der Intelligenz eines Menschens entfernt sind, geben wird,
+
+        \subsubsection{Social Engineering Attacks}
+
+
     \section{AI Boxing Strategies}
         \subsection{Problemlösungsansätze}
         \subsection{Simulated Areas / Simulations}
