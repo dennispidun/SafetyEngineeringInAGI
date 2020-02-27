@@ -58,10 +58,11 @@
             in simplen Schritten zu lösen. Dabei wird die Forschung ständig vor neuen Herausforderungen
             gestellt, nicht nur werden Abläufe und Prozesse immer schneller, es treten auch Probleme auf,
             welche es gilt zu identifizieren und im besten Fall vorzubeugen. Diese Arbeit zielt daher
-            darauf ab Konzepte herauszufinden, welche es ermöglichen möglichst gezielt für Sicherheit
+            darauf ab, Konzepte herauszufinden, welche es ermöglichen möglichst gezielt für Sicherheit
             in der Entwicklung von Artificial General Intelligence zu sorgen. Die Herausforderung eine
-            sichere Umgebung sowohl für Mensch als auch für die Maschine aufzustellen, stellt somit das
-            Kernthema dar. //TBC
+            sichere Umgebung sowohl für Mensch, als auch für die Maschine aufzustellen, stellt somit das
+            Kernthema dar. Doch wie genau können diese Sicherheitsmaßnahmen aussehen und welche Vorteile erhalten
+            wir durch diese zusätzlichen Sicherheitsmaßnahmen?
 
         \subsection{Machine Ethics}
             //Überarbeiten//
@@ -110,7 +111,9 @@
     \section{Artificial General Intelligence}
         Um besser differenzieren zu können, um welche Art von künstlicher Intelligenz hier behandelt
         wird, werde ich nachfolgend auf diverse Definitionen eingehen, welche sich mit den verschiedenen
-        Stufen von AI(-Systemen) und deren Abgrenzung beschäftigen.
+        Stufen von AI(-Systemen) und deren Abgrenzung beschäftigen. Außerdem wird hiermit ein Überblick geschaffen,
+        welcher darüber informiert, in welchem Stadium sich die aktuelle Forschung bezüglich künstlicher
+        Superintelligenzen befindet und wie der Ausblick in die Zukunft ist.
 
         \subsection{Classical Artificial Intelligence}\label{subsec:cai}
             John McCarthy stellte zu Beginn der Era der künstlichen Intelligenz bereits folgende Definition
@@ -198,7 +201,7 @@
             Maschine wirklich eine stark intelligente Maschine ist, oder nicht?
             \begin{figure}[h]
                 \begin{center}
-                    \includegraphics[width=0.8\textwidth]{figures/ai-definitions.png}
+                    \includegraphics[width=0.9\textwidth]{figures/ai-definitions.png}
                     \caption[4 Definitionen AI]{4 Definitionen von AI, organisiert in 4 Kategorien nach \cite{russell}}
                     \label{pic:ai-definitions}
                 \end{center}
@@ -232,7 +235,11 @@
 
             Einige bekannte Persönlichkeiten wie Elon Musk, Bill Gates und Stephen Hawking prognostizierten, dass es
             schon in den nächsten zwei Jahrzehnten zu General AIs kommen kann. \cite[p. 20]{Tamboli2019} Wobei dies laut
-            A. Tamboli auch schon deutlich früher geschehen kann.
+            A. Tamboli auch schon deutlich früher geschehen kann. E. Yudkowsky hingegen sagt hingegen, dass es bereits
+            2021 zu den ersten Strong AIs kommen könnte.\cite{yudkowsky_2001}. ``If computing speeds double every
+            two years, what happens when computer-based AIs are doing the research?''. Was bedeuten würde, dass sobald
+            es zu selbst-verbessernden-AIs kommen würde, die Zeitabschnitte zwischen den Verbesserungen immer kürzer
+            werden würden.
 
     \section{Safety Engineering}
         In der Vergangenheit kam es durch diverse Fehler zu verschiedene Umfälle, unteranderem wären da zu nennen:
@@ -250,7 +257,7 @@
 
         \begin{figure}[h]
             \begin{center}
-                \includegraphics[width=0.8\textwidth]{figures/testing.png}
+                \includegraphics[width=0.9\textwidth]{figures/testing.png}
                 \caption[Testing Strategies]{Testing Strategien und deren Verbindungen nach \cite{bertolino2019}}
                 \label{pic:testing-strategies}
             \end{center}
@@ -342,7 +349,30 @@
         Kaufempfehlungen. Sie alle haben gemeinsam, dass sie im Hintergrund einen Ansatz aus dem Gebiet der künstlichen
         Intelligenz verfolgen, denn sie alle streben intelligentes Verhalten an. Doch man kann KI-Systeme auch in
         anderen Gebieten einsetzen, wobei hier der \textit{militärische Einsatz von Drohnentechnologie} beispielhaft
-        zu nennen wäre. \cite[p. 251]{Stulpe2018}//TBC
+        zu nennen wäre. \cite[p. 251]{Stulpe2018} Was wäre also wenn eine Drohne nicht den ``Richtigen'' sondern den
+        ``Falschen'' - wobei hier richtig und falsch völlig wertfrei zu verstehen sind - ausschalten würde?
+
+        Damit das Vertrauen in der Sicherheit von künstlichen Intelligenzen und autonomen Agenten nicht dahinschwindet,
+        haben sich diverse Forscher Ideen überlegt um diverse Fehlschläge zu verhindern.\cite[p. 257]{GordonSpears2003}
+        Diese Ideen spiegeln sich somit in einem Regelsatz wieder, welches auf die Agenten übertragen wird. Jedes dieser
+        Gesetze muss daher strikt von dem Agent eingehalten werden. Beispielsweise:
+        \textit{An agent should not cause harm.} Beim Einsatz von militärischen Drohnen wäre dies jedoch kein
+        Zielführender Ansatz, da eben genau diese Drohnen für solche Zwecke konzipiert wurden. Gordon-Spears fordert daher
+        eine Kombination aus:
+
+        \begin{enumerate}
+            \item \textit{A set of ethics for our agents}
+            \item \textit{External social laws that capture this code of ethics}
+            \item \textit{Law enforcement (reward/punishment)}
+            \item \textit{Internal ``emotions'' or ``sensations''(pleasure/pain)}
+            \item \textit{Internal methods for agent self-regulation, i.e., the ability to operationalize/interpret the laws
+            and self-verify that they are obeyed to the best of an agent's knowledge}
+        \end{enumerate}
+
+        Was wiederum dafür sorgen würde, dass sich diese Agenten selbst regulieren müssen. Schwer fallen wird es einem
+        dennoch den ``richtigen'' Satz von Ethiken und Moralvorstellungen zu finden. Außerdem sind \textit{emotions} und
+        \textit{sensations} auch schwierig, da genau das den großen Vorteil von künstlicher Intelligenz eingrenzen würde,
+        da so eine KI nicht rational entscheiden würde.
 
     \section{The Artificial Confinementapproach}
 
@@ -372,7 +402,7 @@
         für gewisse Zwecke nicht vorgesehen sind, wie zum Beispiel die Lüftersteuerung, um darüber Morse-Codes zu senden.
 
         \subsection{Mögliche Escape Paths}
-        Im Folgenden werden Mögliche Routen und Wege erläutert, wie eine AGI ausbrechen kann, auch wenn sie durch ein
+        Im Folgenden werden mögliche Routen und Wege erläutert, wie eine AGI ausbrechen kann, auch wenn sie durch ein
         Confinement-Protokoll geschützt wird. Dabei werden die von \citep{yampolskiy2012leakproofing} aufgestellten
         Möglichkeiten diskutiert und genauer analysiert. Hvistendahl berichtet daher, dass sollte eine AI schlau genug
         sein, könnte es passieren, dass diese besser mit den Beschränkungen umgehen kann, als die Ersteller selbst.
@@ -386,11 +416,61 @@
         wird, dass die AGI die physischen Möglichkeiten beispielsweise in Form von Komponenten ausnutzt um darüber zu
         kommunizieren und sich so einen Weg nach ``draußen'' zu verschaffen.\cite{yampolskiy2012leakproofing}
 
+        Yampolskiy spricht hier auch von \textit{System Resource Attacks}, da ein direkter Angriff auf die zur Verfügung
+        stehenden Komponten durchgeführt wird. Dabei wird davon ausgegangen, dass die Software der AGI auf der
+        Von-Neumann-Architektur, der Turing-Architektur, Quantencomputer oder ähnliche noch \textit{unbekannte} Hardware
+        läuft. In jedem Fall wird es in gewisserweise aus natürlichen Materialien bestehen, welche wiederum Komponenten
+        bilden. Diese Komponenten haben in jedem Fall einen bestimmten Zweck. Erlangt nun eine AGI Zugriff auf diese
+        Hardware könnte es möglich sein, diese zu zweckentfremden und somit für andere Dinge zu verwenden.\cite[p. 199]{yampolskiy2012leakproofing}
+        Ziel dieser Zweckentfremdung ist immer das Lösen aus dem Confinement-Protokoll. Eine AGI könnte also versuchen
+        über diese Komponenten Informationen über einen Covert-Channel zun versenden. Yampolskiy spricht deshalb von
+        zwei sehr bekannten Covert-Channeln:
+
+        \begin{enumerate}
+            \item \textit{Storage Channels}
+            \item \textit{Timing Channels}
+        \end{enumerate}
+
+        Bei den Storage Channels werden Informationen übertragen indem System Komponenten modifiziert werden. Bei Timing
+        Channels hingegen, werden Komponente so manipuliert, dass auftretende Events in ihrem zeitlichen Ablauf geändert
+        werden. Dadurch können wiederum Informationen übertragen werden, welche von der Außenwelt verstanden werden.
+        \cite[p. 200]{yampolskiy2012leakproofing}
+
+        Die Möglichkeiten sehe ich eher als weniger risikoreich, da es dennoch jemanden geben muss, der diese Informationen
+        verarbeiten kann. Viel wahrscheinlicher stelle ich mir daher vor, dass eine AGI die Hardware so manipuliert,
+        sodass sie tatsächlich ausbrechen kann. Etwa indem sie die Hardware des Confinement-Protokoll direkt angreift.
+        \cite[p. 200]{yampolskiy2012leakproofing} Beispielsweise indem sie die Last auf dem Prozessor derart erhöht,
+        dass die Temperatur drastisch ansteigt und damit die Hardware zerstört oder physisch einschränkt.
+
+
         Im Grunde versucht man dabei die Künstliche Intelligenz physisch einzusperren und von vornherein von der Außenwelt
         auszusperren. Wenn man sich nun vorstellt, dass in der Zukunft, wo es künstliche Intelligenzen, welche weit von
         der Intelligenz eines Menschens entfernt sind, geben wird, dann wird in jedem Fall diese künstliche Intelligenz
         versuchen aus der Umgebung auszubrechen, sodass diese mehr Macht erlangen kann. Dies stellt die Befürchtung für
         den schlechtesten zu erwartenden Fall dar.\cite{yampolskiy2012leakproofing}
+
+        \subsubsection{Social Engineering Attacks}
+        Ein weiteres mögliches Angriffszenario lässt sich leicht vorstellen. Man greift nun nicht mehr das System selbst
+        an, sondern den schwächsten Teil des Gesamtsystems: den Menschen.\cite{armstrongforthcoming}, \cite{yampolskiy2012leakproofing}
+        Man stellt sich hierbei vor, dass ein Mensch \textit{belastet von Fehlern}, \textit{abhängig von Energie}
+        und vor allem angreifbar durch sogenannte \textit{Social Engineering Attacks} ist. Social Engineering (SE)
+        beschreibt die Herangehensweise, um in ein System hereinzukommen. Hierbei wird ein spezifischer Angriff direkt
+        auf eine bestimmte Person gefahren, sodass diese ihm Zugriff gewährt. \cite{yampolskiy2012leakproofing} Es wird
+        also versucht, über den Menschen an bestimmte Ressourcen zu gelangen oder bestimmte Vorteile zu erlangen. Triviale
+        Angriffe können daher schon einfaches Lügen oder Verschweigen von Informationen sein.
+        Stelle man sich nun eine Künstliche Intelligenz vor, welche über genügend Kapazität verfügt, dann kann eine solche
+        KI ein Target sehr einfach überlisten und sogenannte \textit{super-briberies} durchführen. \cite{yampolskiy2012leakproofing}
+        Die KI plant Dinge gewissenhaft und mit großer Vorsicht, die Person steht daher im Fokus und wird beispielsweise
+        mit Gesundheit und Unversehrtheit bestochen, sodass die KI ``freigelasse'' wird. Außerdem könnte man sich noch
+        vorstellen, dass eine KI versucht dem sogenannten Guard Angst zu machen. Die KI wird versuchen persönliche
+        Informationen zu missbrauchen, sodass diese sich dadurch einen Vorteil verschaffen kann. Im schlechtesten Fall
+        wird eine KI dem Guard androhen geliebte Familienmitglieder zu töten oder zu foltern, falls diese sich aus dem
+        Confinement in der Zukunft befreien kann.
+
+    \section{AI Boxing Strategies}
+        Wie zuvor erwähnt, kann es für eine KI verschiedene Möglichkeiten geben aus einem System auszubrechen. Um dies
+        zu verhindern, überlegt man sich Maßnahmen, sodass es nicht zum Ausbruch der KI kommen kann.
+        \subsection{Physical Boxing}
 
         Um die genannten Probleme zu umgehen, entwickelten daher schon Armstrong et al. Konzepte zur sogenannten OracleAI,
         bei der es darum geht, die Interaktionsmöglichkeiten auf ein Minimum zu beschränken.\cite{armstrongforthcoming}
@@ -401,18 +481,8 @@
         können also nur noch geringe Risiken wirken, welche weiter durch zusätzliche Maßnahmen eingeschränkt werden können,
         beispielsweise ein faradaischer Käfig als Schirm vor elektromagnetische Wellen nach Außen.
 
-    \subsubsection{Social Engineering Attacks}
-        Ein weiteres mögliches Angriffszenario lässt sich leicht vorstellen. Man greift nun nicht mehr das System selbst
-        an, sondern den schwächsten Teil des Gesamtsystems: den Menschen.\cite{armstrongforthcoming} \cite{yampolskiy2012leakproofing}
-        Man stellt sich hierbei vor, dass ein Mensch \textit{belastet von Fehlern}, \textit{abhängig von Energie}
-        und vor allem angreifbar durch sogenannten \textit{Social Engineering Attacks} ist. Dies gilt es daher zu
-        vermeiden.
-
-    \section{AI Boxing Strategies}
-        \subsection{Problemlösungsansätze}
-        \subsection{Simulated Areas / Simulations}
-        \subsection{Physical Boxing}
         \subsection{Psychological Boxing}
+        \subsection{Simulated Areas / Simulations}
         \subsection{Kombination mit anderen Limitierungstechniken}
     \section{Fazit}
 
