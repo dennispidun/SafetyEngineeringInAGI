@@ -137,7 +137,7 @@
 
             \begin{figure}[h]
                 \begin{center}
-                    \includegraphics[width=0.8\textwidth]{figures/braitenberg-roboter.png}
+                    \includegraphics[width=1.0\textwidth]{figures/braitenberg-roboter.png}
                     \caption[Verschaltung Braitenberg-Vehikel]{Simple Verschaltung zweier Braitenbergvehikel nach \cite{ertel2016grundkurs}}
                     \label{pic:braitenberg-vehikel}
                 \end{center}
@@ -470,6 +470,10 @@
     \section{AI Boxing Strategies}
         Wie zuvor erwähnt, kann es für eine KI verschiedene Möglichkeiten geben aus einem System auszubrechen. Um dies
         zu verhindern, überlegt man sich Maßnahmen, sodass es nicht zum Ausbruch der KI kommen kann.
+
+        \subsection{The AI-Box Experiment}
+
+
         \subsection{Physical Boxing}
 
         Um die genannten Probleme zu umgehen, entwickelten daher schon Armstrong et al. Konzepte zur sogenannten OracleAI,
@@ -479,9 +483,22 @@
         ausmacht, wäre zu erwähnen, dass diese simpel gesagt, lediglich natürliche Sprache als Ein- sowie ausgabe zulässt.
         Damit versucht man, die künstliche Intelligenz weitesgehend von der Außenwelt abzuschirmen. Physikalisch gesehen,
         können also nur noch geringe Risiken wirken, welche weiter durch zusätzliche Maßnahmen eingeschränkt werden können,
-        beispielsweise ein faradaischer Käfig als Schirm vor elektromagnetische Wellen nach Außen.
+        beispielsweise ein faradaischer Käfig als Schirm vor elektromagnetische Wellen nach Außen. \cite[p. 308]{armstrongforthcoming}
+        So ist es beispielsweise nicht möglich, dass elektromagnetische Strahlung nach außen treten kann.
+        ``Resource acquisition is impossible when no resources are available'' \cite[p. 4]{ebhardt2018threat} Womit die
+        Optimierungsmöglichkeiten deutlich reduziert sind, sodass eine Selbstoptimierung nicht weiter möglich ist.
 
         \subsection{Psychological Boxing}
+
+        Sofern es zur erfolgreichen Umsetzung der OracleAI kommt, bleibt es trotzdem bei den Problemen der Social
+        Engineering Attacks, auch dann, wenn man erfolgreich die AI in \textit{sealed hardware} eingelassen hat.\cite[p. 4]{ebhardt2018threat}
+        Zum aktuellen Zeitpunkt gibt es jedoch nicht viele Quellen zu diesem Themenbereich. Gerade weil AGIs den Intellekt
+        eines jeden Menschen übersteigen würde, ist es tatsächlich sehr schwierig, dies zu verhindern, ohne einen Nachteil
+        dadurch zu bekommen.\cite[p. 204]{yampolskiy2012leakproofing} Die einzige Möglichkeit eine 100 Prozentige Sicherheit
+        zu erhalten, ist es die KI gänzlich von der Kommunikation mit Menschen abzuschirmen, sodass diese keinerlei
+        soziale Interaktionen durchführen können.
+
+
         \subsection{Simulated Areas / Simulations}
         \subsection{Kombination mit anderen Limitierungstechniken}
     \section{Fazit}
