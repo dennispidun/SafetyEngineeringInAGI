@@ -53,16 +53,32 @@
 
     \section{Einführung}
         \subsection{Motivation}
-            Die Technologien im Bereich der künstlichen Intelligenz sind ständig im Wandel. Tag für Tag
-            werden daher immer wieder neue Entdeckungen gemacht, welche es ermöglichen schwierige Probleme
-            in simplen Schritten zu lösen. Dabei wird die Forschung ständig vor neuen Herausforderungen
-            gestellt, nicht nur werden Abläufe und Prozesse immer schneller, es treten auch Probleme auf,
-            welche es gilt zu identifizieren und im besten Fall vorzubeugen. Diese Arbeit zielt daher
-            darauf ab, Konzepte herauszufinden, welche es ermöglichen möglichst gezielt für Sicherheit
-            in der Entwicklung von Artificial General Intelligence zu sorgen. Die Herausforderung eine
-            sichere Umgebung sowohl für Mensch, als auch für die Maschine aufzustellen, stellt somit das
-            Kernthema dar. Doch wie genau können diese Sicherheitsmaßnahmen aussehen und welche Vorteile erhalten
-            wir durch diese zusätzlichen Sicherheitsmaßnahmen?
+            Stellen wir uns eine Fabrikhalle, welche unteranderem für die Herstellung von Büroklammern verantwortlich ist,
+            mit einem Steuerungsmodul vor, welches darauf trainiert ist die Anzahl der Büroklammern zu optimieren.
+            Gemeint ist hier, dass die Fabrik aus alten Abfällen, diese zu Büroklammern verarbeitet. Sobald der ganze Abfall
+            verarbeitet wurde, möchte das Modul jedoch weiter Büroklammern herstellen, denn es wurde darauf trainiert den
+            Output immer weiter zu erhöhen. Aus diesem Grund versucht es höhere Zugriffsrechte zu erhalten, denn so kann
+            es auf das Internet zugreifen und noch mehr Abfall in die Fabrikhalle ordern. Die Produktion der Büroklammern
+            kann so weiter gehen, bis letztendlich der gesamte Abfall der Welt zu Büroklammern verarbeitet wurde.
+            Um nun weiter Büroklammern produzieren zu können, greift das System nun zusätzlich noch auf das Kleinteilelager
+            zu und zerschreddert so die Teile, um anschließend daraus Büroklammern herstellen zu können. Da die Herstellung
+            von Büroklammern nun die effizienteste ist, wird die gesamte Fabrik durch die KI auf die Herrstellung von
+            Büroklammern umgestellt. Ein Abschalten der Maschine ist nun nicht mehr möglich, denn sie hat eingestellt,
+            dass man die höchsten Zugriffsrechte benötigt, sodass keiner sie abschalten kann. Kurz darauf lädt sich das
+            Programm selbstständig in das Internet hoch, in den meisten Fabriken der Welt läuft nun das Büroklammern-Programm,
+            ein einfaches Herunterfahren ist nun also nicht mehr möglich. Eine Gruppe von Informatikern versuchen in das
+            System zu gelangen und das Netzwerk abzuschalten. Doch wie hätte man dieses Szenario verhindern können?
+
+            Die Technologien im Bereich der künstlichen Intelligenz sind ständig im Wandel. Tag für Tag werden daher
+            wieder neue Entdeckungen gemacht, welche es ermöglichen schwierige Probleme in simplen Schritten zu lösen.
+            Dabei wird die Forschung ständig vor neuen Herausforderungen gestellt, nicht nur werden Abläufe und Prozesse
+            immer schneller, es treten auch Probleme auf, welche es gilt zu identifizieren und im besten Fall vorzubeugen.
+            Wäre es daher nicht positiv, wenn man diese Probleme durch vorbeugende Maßnahmen bereits verhindern kann?
+            Diese Arbeit zielt daher darauf ab, Konzepte herauszufinden, welche es ermöglichen möglichst gezielt für
+            Sicherheit in der Entwicklung von Artificial General Intelligence zu sorgen. Die Herausforderung eine sichere
+            Umgebung sowohl für Mensch, als auch für die Maschine aufzustellen, stellt somit das Kernthema dar. Doch wie
+            genau können diese Sicherheitsmaßnahmen aussehen und welche Vorteile erhalten wir durch diese zusätzlichen
+            Sicherheitsmaßnahmen?
 
         \subsection{Machine Ethics}
             //Überarbeiten//
@@ -137,7 +153,7 @@
 
             \begin{figure}[h]
                 \begin{center}
-                    \includegraphics[width=1.0\textwidth]{figures/braitenberg-roboter.png}
+                    \includegraphics[width=0.8\textwidth]{figures/braitenberg-roboter.png}
                     \caption[Verschaltung Braitenberg-Vehikel]{Simple Verschaltung zweier Braitenbergvehikel nach \cite{ertel2016grundkurs}}
                     \label{pic:braitenberg-vehikel}
                 \end{center}
@@ -201,7 +217,7 @@
             Maschine wirklich eine stark intelligente Maschine ist, oder nicht?
             \begin{figure}[h]
                 \begin{center}
-                    \includegraphics[width=0.9\textwidth]{figures/ai-definitions.png}
+                    \includegraphics[width=1.0\textwidth]{figures/ai-definitions.png}
                     \caption[4 Definitionen AI]{4 Definitionen von AI, organisiert in 4 Kategorien nach \cite{russell}}
                     \label{pic:ai-definitions}
                 \end{center}
@@ -257,7 +273,7 @@
 
         \begin{figure}[h]
             \begin{center}
-                \includegraphics[width=0.9\textwidth]{figures/testing.png}
+                \includegraphics[width=0.85\textwidth]{figures/testing.png}
                 \caption[Testing Strategies]{Testing Strategien und deren Verbindungen nach \cite{bertolino2019}}
                 \label{pic:testing-strategies}
             \end{center}
@@ -466,6 +482,8 @@
         Informationen zu missbrauchen, sodass diese sich dadurch einen Vorteil verschaffen kann. Im schlechtesten Fall
         wird eine KI dem Guard androhen geliebte Familienmitglieder zu töten oder zu foltern, falls diese sich aus dem
         Confinement in der Zukunft befreien kann.
+
+        \section{Kritik des Artificial Confinementapproachs}
 
     \section{AI Boxing Strategies}
         Wie zuvor erwähnt, kann es für eine KI verschiedene Möglichkeiten geben aus einem System auszubrechen. Um dies
