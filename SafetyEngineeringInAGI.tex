@@ -289,80 +289,79 @@
             \end{center}
         \end{figure}
 
-        Eine Möglichkeit Zuverlässigkeit von Software sicherzustellen ist das Testen. Dabei kann man zwischen
+        Eine Möglichkeit Zuverlässigkeit von Software sicherzustellen, ist das Testen. Dabei kann man zwischen
         \textit{Functional Testing}, \textit{Operational Testing} und \textit{Structural Testing} unterscheiden.
-        Jedes dieser Testing Strategien fokussiert dabei einen spezifischen Teil der zu testenden Software. \cite[s. 26]{bertolino2019}
-        Wobei jede Strategie mit den anderen Strategien in Wechselwirkung steht, wie man in \ref{pic:testing-strategies}
-        erkennnen kann.
+        Jede dieser Testing Strategien fokussiert sich dabei einen spezifischen Teil der zu testenden Software
+        \cite[s. 26]{bertolino2019}. Dabei kann jede Strategie mit anderen Strategien in Wechelwirkung stehen, wie man
+        in Abbildung \ref{pic:testing-strategies} erkennnen kann.
 
         Dieses Vorgehen kennt man bereits aus der klassischen Software Entwicklung und erhält dort großen Zuspruch.
-        Nicht zuletzt wird es durch Praktiken wie Test-Driven-Development in die Tat umgesetzt. \cite[s. 403]{Kollanus2010}
-        Durch diese Art zu entwickeln ergibt sich daher ein konsistentes Verhalten in Bezug zu Zuverlässigkeit und
+        Nicht zuletzt wird es durch Praktiken wie Test-Driven-Development in die Tat umgesetzt \cite[s. 403]{Kollanus2010}.
+        Durch diese Entwicklungsart ergibt sich daher ein konsistentes Verhalten in Bezug zu Zuverlässigkeit und
         Sicherheit von Software Produkten. Doch lassen sich diese Ansätze ebenfalls auf das Entwickeln von
         neuronalen Netzwerken, Maschinelles Lernen und Künstlichen Intelligenzen im Speziellen übertragen?
 
         \subsection{Probleme bei AI Engineering}
         Die Vorteile von Artificial Intelligence werden gerade in der heutigen Zeit immer greifbarer. Daher liegt es
         nahe, dass die Industrie diese Vorteile nutzt und in die Tat umsetzt. Jedoch tritt man beim Entwickeln von AIs
-        auch gelegentlich auf Probleme. Nicht zuletzt darauf, dass man gerade bei Superintelliges beziehungsweise
+        auch gelegentlich auf Probleme. Nicht zuletzt darauf, dass man gerade bei Superintellingences beziehungsweise
         Artificial General Intelligences ein erhöhtes Sicherheitsrisiko hat. Doch welche Probleme treten im Detail auf?
 
         Das wohl größte Problem in der aktuellen Zeit und auch noch in den nächsten Jahren, ist wohl die Tatsache, dass
         man nicht genau bestimmen kann, welche Folgen es haben wird, wenn es zu einer Superintelligence kommt.
-        \cite[s. 21]{Tamboli2019} Es ist nicht bestimmt, was in ein paar Jahren passieren wird. A. Tamboli beschreibt
-        dies als die Dinge, über die wir bisher noch nicht nachgedacht haben, was in gewisser Weise korrekt ist.
-        Man kann leider nie genau bestimmen, welche Folgen eine gewisse neuartige Technologie hat. Ist es daher richtig
-        direkt alles abzulehnen?
+        \cite[s. 21]{Tamboli2019} Es ist nicht vorhersagbar, was in ein paar Jahren passieren wird. Tamboli beschreibt
+        dies als die Dinge, über die bisher noch nicht nachgedacht wurde. Es ist unvorhersehbar, welche expliziten Folgen
+        eine innovative Technologie haben wird.
 
-        Als ein weiteres Problem betrachtet A. Tamboli, dass KIs das \textit{Wie?} beherrschen, jedoch nicht das
-        \textit{Warum?}, bestimmen können.\cite[s. 24]{Tamboli2019} Je nach Trainingssatz kann eine Entscheidung von
+        Als ein weiteres Problem betrachtet Tamboli, dass KIs das \textit{Wie} beherrschen, jedoch nicht das
+        \textit{Warum}, bestimmen können \cite[s. 24]{Tamboli2019}. Je nach Trainingssatz kann eine Entscheidung von
         einer KI getroffen werden. Jedoch kann es vorkommen, dass die Daten qualitativ nicht hochwertig sind, oder sogar
         in bestimmter Weise voreingenommen sind. Dies stellt ein großes Problem dar, da eine KI über diese Trainingssätze
         versucht zu generalisieren, eine fehlerhafte Datenquelle wäre daher verheerend für den Erfolg der KI. Dieses
-        Problem erkannte daher auch schon John Searle mithilfe des \textit{Chinese Room Experiment}.\cite{cole_2014}
+        Problem erkannte auch schon John Searle mithilfe des \textit{Chinese Room Experiment} \cite{cole_2014}.
 
         Zu guter Letzt wäre da noch das sogenannte Black Box Problem zu nennen. Darunter versteht man die Problematik,
-        dass man unter gegebenen Input ein resultierendes Ergebnis erhält, jedoch nicht zuordnen kann was die Maschine
+        dass man unter gegebenen Input ein resultierendes Ergebnis erhält, jedoch nicht zuordnen, kann was die Maschine
         genau macht oder wie sie es macht. \cite{zednik2019solving} Darbei stellt die Transparenz das hauptsächliche
-        Problem bei KIs dar, denn es fällt uns aktuell schwer diese Verarbeitungen treffend zu visualisieren.
-        Entscheidungen die getroffen werden, sind daher schlichtweg nicht greifbar genug und können daher nicht verstanden
+        Problem bei KIs dar, denn es fällt aktuell schwer, diese Verarbeitungen treffend zu visualisieren. Entscheidungen,
+        die getroffen werden, sind daher schlichtweg nicht greifbar genug und können daher nicht verstanden
         werden.
 
         \subsection{AI Safety in Artificial Superintelligent Systems}
 
-        Safety Engineering für Superintelligent Systems ist tatsächlich ein sehr schwieriges Thema, da man sich
-        zunächst Gedanken machen muss, welche Sicherheitsmechanismen man bei \textit{sich-selbst-verbessernden System}
-        einsetzen kann.\cite[s. 9]{yampolskiy2013safety} Denn geht man davon aus, dass Superintelligente Systeme sich
-        stetig selbst weiter entwickeln können, dann muss man ebenfalls davon ausgehen, dass diese die vorgesehenen
-        Sicherheitsmaßnahmen überwinden können. Dies stellt ein Problem dar, da man dafür sorgen muss, dass diese
-        Sicherheitsmechanismen ebenfalls noch in mehreren tausenden Generationen vorhanden sind.
+        Safety Engineering für Superintelligent Systems st ein komplexes Thema, da zunächst überlegt werden muss, welche
+        Sicherheitsmechanismen bei \textit{sich-selbst-verbessernden System} eingesetzt werden können \cite[s. 9]{yampolskiy2013safety}.
+        Denn geht man davon aus, dass superintelligente Systeme sich stetig selbst weiterentwickeln können, dann muss man
+        ebenfalls davon ausgehen, dass diese die vorgesehenen Sicherheitsmaßnahmen überwinden können. Dies stellt ein
+        Problem dar, da man dafür sorgen muss, dass diese Sicherheitsmechanismen ebenfalls noch in mehreren tausenden
+        Generationen vorhanden sind.
 
-        Aber was sind überhaupt mögliche Probleme und Szenarien, die durch Safety Engineering verhindert werden müssen?
-        Diverse Persönlichkeiten prognostizieren keine gute Zukunft, sollte es wirklich in den nächsten Jahren zu
-        eine starken KI beziehungsweise Superintelligence kommen. Stephan Hawking selbst sagte daher schon: ``The development
+        Aber was sind mögliche Probleme und Szenarien, die durch Safety Engineering verhindert werden müssen? Diverse
+        Experten prognostizieren keine gute Zukunft, sollte es wirklich in den nächsten Jahren zu einer starken KI
+        beziehungsweise Superintelligence kommen. Stephan Hawking selbst sagte daher schon: ``The development
         of full artificial intelligence could spell the end of the human race.''.\cite{cellan-jones_2014} Aber auch
         andere Quellen berichten von diversen Folgen (\cite[Bostrom]{bostrom_2014}, \cite[Beckers]{Beckers2018},
-        \cite[Musk]{hern_2015}). Gerade weil es so große Folgen haben könnte diesen Persönlichkeiten keine Beachtung zu
+        \cite[Musk]{hern_2015}). Gerade weil es so enorme Konsequenzen haben könnte, diesen Experten keine Beachtung zu
         schenken, wurden bereits diverse Institutionen gegründet, die sich genau diesem Thema gewidmet haben. Unter anderem
-        as \textit{Center for Human-Compatible AI}, \textit{Machine Intelligence Research Institute}, \textit{OpenAI} oder
+        das \textit{Center for Human-Compatible AI}, \textit{Machine Intelligence Research Institute}, \textit{OpenAI} oder
         die von Nick Bostrom gegründete Organisation \textit{Future of Humanity Institute}. All diese Institutionen
         beschäftigen sich mit ähnlichen Themen rund um General Intelligence und wie man diese derart regulieren kann,
         sodass sie in keinster Weise bedrohlich für die Menschheit ist. Eine Superintelligenz, welche ein Bewusstsein hat
         und deutlich schlauer als jeder Mensch auf der Erde wäre und dementsprechend über die verschiedensten Fähigkeiten
-        verfügt \cite{bostrom_2006}, könnte eine echte Bedrohung darstellen, da sie in ihrem Bewusstsein uns Menschen
-        deutlichst voraus wäre.\cite{Beckers2018}. Beckers sagt außerdem, dass es aktuell noch unklar ist, inweit man
-        verstehen soll, dass eine Künstliche Intelligenz die Intelligenz der Menschheit übersteigt.\cite[s. 237]{Beckers2018}
+        verfügt \cite{bostrom_2006}, könnte eine Bedrohung darstellen, da sie in ihrem Bewusstsein den Menschen
+        deutlichst voraus wäre \cite{Beckers2018}. Beckers sagt außerdem, dass es aktuell noch unklar ist, inweit man
+        verstehen soll, dass eine Künstliche Intelligenz die Intelligenz der Menschheit übersteigt \cite[s. 237]{Beckers2018}.
         Denn \textit{Intelligenz} ist schlichtweg zunächst eine Eigenschaft, die man einem Menschen zuschreiben kann,
         nicht jedoch einer Maschine. Ist dann die Intelligenz eines Computers anders zu verstehen als die Intelligenz
         eines Menschens?
 
-        Es gilt also zu verhindern, dass eine Strong AI seine Schöpfer überlisten kann. Und somit müssen nachhaltige
+        Es gilt also zu verhindern, dass eine Strong AI seine Schöpfer*innen überlisten kann. Und somit müssen nachhaltige
         Maßnahmen getroffen werden, die dieses in einer effizienten Weise verhindern können. Denn es gilt stets die
         \textit{humanitären Werte} zu erhalten, ohne dass die Moral verloren geht, weder nach Hardware Fehlern noch
-        nach Software Fehlern.\cite[s. 7]{yampolskiy2013safety}. Dabei wird bereits aktiv daran geforscht, so
-        Yampolskiy et al.\citep{gordon1998}, \citep{GordonSpears2003} und \citep{Spears}. Doch welche Möglichkeiten
-        bestehen nun, um die KI in einer sicheren Umgebung zu halten? Wie genau werden diese Möglichkeiten in der
-        Realität implementiert? Und wie können Probleme durch Safety Engineering verhindert werden?
+        nach Software Fehlern \cite[s. 7]{yampolskiy2013safety}. Dabei wird bereits aktiv daran geforscht, so
+        \citeauthor*{yampolskiy2013safety}, \citep{gordon1998}, \citep{GordonSpears2003} und \citep{Spears}. Doch welche
+        Möglichkeiten bestehen, um die KI in einer sicheren Umgebung zu halten? Wie genau werden diese Möglichkeiten
+        in der Realität implementiert. Wie können Probleme durch Safety Engineering verhindert werden?
 
 
         \subsection{AI Safety in klassischen AI Systems}
