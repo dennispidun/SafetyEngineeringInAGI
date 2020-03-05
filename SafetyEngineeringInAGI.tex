@@ -49,11 +49,6 @@
     \tableofcontents
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    % Abbildungsverzeichnis
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \listoffigures
-
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Inhalt
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \newpage
@@ -571,6 +566,14 @@
     \section{Fazit}
 
     \newpage
+    \setcounter{page}{0}
+    \pagenumbering{Romanic}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Abbildungsverzeichnis
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \listoffigures
+
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %% Einbinden der Quellen
     %% https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex#Reference_guide
@@ -578,6 +581,8 @@
     \addcontentsline{toc}{section}{\bibname}
     \bibliography{quellen}
     \bibliographystyle{dinat}
+
+
 
 
 \end{document}
