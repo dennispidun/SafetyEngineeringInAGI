@@ -56,76 +56,70 @@
     \pagenumbering{arabic}
     \section{Einführung}
         \subsection{Motivation}
-            Stellen wir uns eine Fabrikhalle, welche unteranderem für die Herstellung von Büroklammern verantwortlich ist,
+            //Formulierung nicht geschickt, Personalpronomina entfernen
+            Man stelle sich eine Fabrikhalle, welche unter anderem für die Herstellung von Büroklammern verantwortlich ist,
             mit einem Steuerungsmodul vor, welches darauf trainiert ist die Anzahl der Büroklammern zu optimieren.
-            Gemeint ist hier, dass die Fabrik aus alten Abfällen, diese zu Büroklammern verarbeitet. Sobald der ganze Abfall
-            verarbeitet wurde, möchte das Modul jedoch weiter Büroklammern herstellen, denn es wurde darauf trainiert den
+            Gemeint ist hier, dass die Fabrik aus alten Abfällen, diese zu Büroklammern verarbeitet. Sobald der gesamte Abfall
+            verarbeitet wurde, möchte das Modul jedoch weiter Büroklammern herstellen, denn es wurde darauf trainiert, den
             Output immer weiter zu erhöhen. Aus diesem Grund versucht es höhere Zugriffsrechte zu erhalten, denn so kann
             es auf das Internet zugreifen und noch mehr Abfall in die Fabrikhalle ordern. Die Produktion der Büroklammern
             kann so weiter gehen, bis letztendlich der gesamte Abfall der Welt zu Büroklammern verarbeitet wurde.
-            Um nun weiter Büroklammern produzieren zu können, greift das System nun zusätzlich noch auf das Kleinteilelager
-            zu und zerschreddert so die Teile, um anschließend daraus Büroklammern herstellen zu können. Da die Herstellung
-            von Büroklammern nun die effizienteste ist, wird die gesamte Fabrik durch die KI auf die Herrstellung von
+            Um nun weiter Büroklammern produzieren zu können, greift das System nun zusätzlich auf das Kleinteilelager
+            zu und zerschreddert die Teile, um anschließend daraus Büroklammern herstellen zu können. Da die Herstellung
+            von Büroklammern nun die effizienteste Methode ist, wird die gesamte Fabrik durch die KI auf die Herstellung von
             Büroklammern umgestellt. Ein Abschalten der Maschine ist nun nicht mehr möglich, denn sie hat eingestellt,
-            dass man die höchsten Zugriffsrechte benötigt, sodass keiner sie abschalten kann. Kurz darauf lädt sich das
-            Programm selbstständig in das Internet hoch, in den meisten Fabriken der Welt läuft nun das Büroklammern-Programm,
-            ein einfaches Herunterfahren ist nun also nicht mehr möglich. Eine Gruppe von Informatikern versuchen in das
-            System zu gelangen und das Netzwerk abzuschalten. Doch wie hätte man dieses Szenario verhindern können?
+            dass man die höchsten Zugriffsrechte benötigt, sodass niemand sie abschalten kann. Kurz darauf lädt sich das
+            Programm selbstständig in das Internet hoch. Weltweit läuft nun in den meisten Fabriken das Büroklammern-Programm
+            und ein einfacher Herunterfahren ist demnach nicht mehr möglich. Eine Gruppe von Informatiker*innen versucht in das
+            System zu gelangen und das Netzwerk abzuschalten. Doch wie hätte dieses Szenario verhindert werden können?
 
             Die Technologien im Bereich der künstlichen Intelligenz sind ständig im Wandel. Tag für Tag werden daher
-            wieder neue Entdeckungen gemacht, welche es ermöglichen schwierige Probleme in simplen Schritten zu lösen.
-            Dabei wird die Forschung ständig vor neuen Herausforderungen gestellt, nicht nur werden Abläufe und Prozesse
+            neue Entdeckungen gemacht, welche es ermöglichen, schwierige Probleme in simplen Schritten zu lösen.
+            Dabei wird die Forschung ständig vor neuen Herausforderungen gestellt. Nicht nur werden Abläufe und Prozesse
             immer schneller, es treten auch Probleme auf, welche es gilt zu identifizieren und im besten Fall vorzubeugen.
-            Wäre es daher nicht positiv, wenn man diese Probleme durch vorbeugende Maßnahmen bereits verhindern kann?
-            Diese Arbeit zielt daher darauf ab, Konzepte herauszufinden, welche es ermöglichen möglichst gezielt für
+            Wäre es daher nicht sinnvoll, wenn diese Probleme durch vorbeugende Maßnahmen bereits verhindert werden könnten?
+            Diese Arbeit zielt daher darauf ab, Konzepte zu diskutieren, welche es ermöglichen, möglichst gezielt für
             Sicherheit in der Entwicklung von Artificial General Intelligence zu sorgen. Die Herausforderung eine sichere
             Umgebung sowohl für Mensch, als auch für die Maschine aufzustellen, stellt somit das Kernthema dar. Doch wie
-            genau können diese Sicherheitsmaßnahmen aussehen und welche Vorteile erhalten wir durch diese zusätzlichen
+            genau können diese Sicherheitsmaßnahmen aussehen und welche Vorteile erhält der Mensch durch diese zusätzlichen
             Sicherheitsmaßnahmen?
 
+            //Geschichte nach xyz kp, muss ich nochmal nachschlagen...
+
         \subsection{Machine Ethics}
-            //Überarbeiten//
-            Um die Frage, warum Machine Ethics wichtig sind zu klären, stellen wir uns zunächst ein
-            Scenario vor, welches bereits von Patrick Lin aufgestellt wurde. \cite[p. 70]{maurer_gerdes_lenz_winner_2015}
-            Hierbei handelt es sich um eine Situation, welche bereits heute auf den
-            Straßen auftreten kann. Um die moralischen Entscheidungen in dem Prozess des Fahrens zu
-            verdeutlichen, stellen wir uns also vor, dass man in einem Auto sitzt und nun eine
-            Entscheidung treffen muss. Nämlich die Entscheidung, ob man nach links ausweicht und damit
-            ein junges Mädchen umbringt oder ob man nach rechts ausweicht und damit eine ältere
-            Seniorin umbringt. Weicht man nicht aus, werden augenblicklich beide Menschen mit in den
-            Tot gerissen. Dieses Beispiel ist tatsächlich sehr dramatisch gewählt, was jedoch sehr gut
-            verdeutlicht, welche nicht rationalen Entscheidungen getroffen werden müssen. Egal welche
-            Entscheidung hierbei getroffen wird, am Ende stirbt mindestens ein Mensch, was in jeder
-            Hinsicht einen Verlust darstellt und ohnehin moralisch nicht korrekt wäre. \cite[p. 70]{maurer_gerdes_lenz_winner_2015}
-            Mit seiner Entscheidung kann man letztendlich nur bestimmen, welche Person benachteiligt
-            wird. In einer solchen Situation jedoch hätte der Mensch ohnehin keine Zeit diese Entscheidung
-            rational zu betrachten. Ferner hätte der Mensch ebenfalls nicht die Möglichkeiten und
-            das Wissen gerecht zu entscheiden.
-            //Überarbeiten//
+            Für die Beantwortung der Frage, weshalb Machine Ethics erklärt werden muss, soll sich zunächst ein Szenario
+            vorgestellt werden, welches von Patrick Lin konzipiert wurde \cite[s. 70]{maurer_gerdes_lenz_winner_2015}.
+            Hierbei handelt es sich um eine Situation, welche bereits heute auf den Straßen auftreten kann. Um die
+            moralischen Entscheidungen in dem Prozess des Fahrens zu verdeutlichen, soll von einer Situation ausgegangen
+            werden, in welcher eine Person in einem Auto sitzt und die Entscheidung treffen soll, entweder ein junges
+            Mädchen oder eine Seniorin durch den Unfall tödlich zu verletzen. Weicht die Person nicht aus, werden augenblicklich
+            beide Menschen tödlich verunglücken. Dieses Beispiel ist sehr dramatisch gewählt, wodurch jedoch die Komplexität
+            dieser Entscheidung explizit verdeutlicht wird. Ganz gleich welche Entscheidung hierbei getroffen wird, am
+            Ende verunglückt mindestens ein Mensch, was in jeder Hinsicht einen Verlust darstellt und ohnehin moralisch
+            nicht korrekt wäre \cite[s. 70]{maurer_gerdes_lenz_winner_2015}. Mit der Entscheidung kann letztendlich nur
+            bestimmt werden, welche der Fußgänger*innen benachteiligt wird. In einer solchen Situation jedoch hätte der
+            Mensch ohnehin keine Zeit, diese Entscheidung rational zu betrachten. Ferner hätte der Mensch ebenfalls nicht
+            die Möglichkeiten und das Wissen gerecht zu entscheiden, weder aus moralischer noch physischer Perspektive.
 
-            Ein weiteres Problem ist außerdem, dass man nicht genau weiß, welche moralischen Werte man
-            innerhalb der AGI verankern soll.\cite[p. 1]{yampolskiy2013safety} Es wird daher viel
-            diskutiert, welche moralischen Wertvorstellungen die richtigen sind. In diversen Literaturen
-            findet man unter verschiedenen Titeln immer wieder Diskussionen, welche sich genau mit dieser
-            Fragestellung auseinandersetzen. Yampolskiy spricht hier davon, dass keine effektiven
-            Maßnahmen getroffen werden, da sich einerseits viel damit beschäftigt wird, sich andererseits
-            aber nichts wandelt und kein nutzbares Ergebnis herauskommt.\cite[p. 1]{yampolskiy2013safety}
-            Dies greifen Yampolskiy und Fox nun auf, um über verschiedene Möglichkeiten dieses Problem zu
-            lösen zu diskutieren.
+            Ein weiteres Problem ist außerdem, dass nicht offensichtlich ist, welche moralischen Werte man innerhalb der
+            AGI verankern soll \cite[s. 1]{yampolskiy2013safety}. Es wird daher viel diskutiert, welche moralischen
+            Wertvorstellungen die richtigen sind. In diversen Studien findet man unter verschiedenen Titeln immer
+            wieder Diskussionen, welche sich genau mit dieser Fragestellung auseinandersetzen. Yampolskiy spricht hier
+            davon, dass keine effektiven Maßnahmen getroffen werden, da sich einerseits viel mit dieser Thematik
+            beschäftigt wird, sich andererseits aber nichts wandelt und kein nutzbares Ergebnis herauskommt \cite[s. 1]{yampolskiy2013safety}.
+            Dies greifen Yampolskiy und Fox nun auf, um über verschiedene Möglichkeiten dieses Problem zu lösen zu diskutieren.
 
-            Laut Yampolskiy und Fox stellt man sich diese Fragen nicht nur bei near-human-AIs, sondern
-            ebenso bei superintelligent AIs.\cite[p. 2]{yampolskiy2013safety} Es ist ferner deutlich
-            bedeutender, so Fox und Yampolskiy, dass man sich gerade im Hinblick auf die immer schnelleren
-            Fortschritte in AGIs, Gedanken um die Sicherheit und Moral bei superintelligent AIs macht.
-            So gehen Crnkovic und {\c{C}}{\"u}r{\"u}kl{\"u} ebenfalls davon aus, dass die Betrachtung
-            der Moral in superintelligent AIs eine übergeordnete Rolle haben muss.\cite[p. 1]{crnkovic2012robots}
-            Sie sprechen hier davon, dass AIs genau das tun würden, wozu sie programmiert
-            wurden, was jedoch nicht exakt richtig ist. Hierbei muss man nämlich zwischen simplen Agenten
-            und komplexeren Agentensystemen unterscheiden, da mit steigender Komplexität und erhöter
-            Autonomität die moralischen Herausforderungen ebenfalls ansteigen werden. Crnkovic et al
-            stellen hier den folgenden Grundsatz auf: ``intelligence must come in conjunction with ethics,
-            through the concept of an artifact ethical by design''. Um dies zu unterstützen, gehe ich daher
-            auf die Möglichkeiten im Bereich des Safety Engineerings ein.
+            Laut Yampolskiy und Fox sollte diese Fragen nicht nur bei near-human-AIs gestellt werden, sondern ebenso bei
+            superintelligent AIs \cite[s. 2]{yampolskiy2013safety}. Es ist ferner wesentlich bedeutender, so Fox und
+            Yampolskiy, dass man sich gerade im Hinblick auf die immer schnelleren Fortschritte in AGIs, Gedanken um die
+            Sicherheit und Moral bei \textit{superintelligent AIs} macht. So gehen Crnkovic und {\c{C}}{\"u}r{\"u}kl{\"u}
+            ebenfalls davon aus, dass die Betrachtung der Moral in superintelligent AIs eine übergeordnete Rolle haben
+            muss \cite*{crnkovic2012robots}. Sie sprechen hier davon, dass AIs genau das tun würden, wozu sie programmiert
+            wurden, was jedoch nicht exakt richtig ist. Hierbei muss man nämlich zwischen simplen Agenten und komplexeren
+            Agentensystemen unterscheiden, da mit steigender Komplexität und erhöter Autonomität die moralischen
+            Herausforderungen ebenfalls ansteigen werden. Crnkovic et al stellen hier den folgenden Grundsatz auf:
+            ``intelligence must come in conjunction with ethics, through the concept of an artifact ethical by design''.
+            Um dies zu unterstützen, gehe ich daher auf die Möglichkeiten im Bereich des Safety Engineerings ein.
 
     \section{Artificial General Intelligence}
         Um besser differenzieren zu können, um welche Art von künstlicher Intelligenz hier behandelt
@@ -137,14 +131,14 @@
         \subsection{Classical Artificial Intelligence}\label{subsec:cai}
             John McCarthy stellte zu Beginn der Era der künstlichen Intelligenz bereits folgende Definition
             auf: ``Getting a computer to do things which, when done by people, are said to involve intelligence.''.
-            \cite[p. 1]{ertel2016grundkurs} Dies ist jedoch eine sehr allgemeine Definition für das
+            \cite[s. 1]{ertel2016grundkurs} Dies ist jedoch eine sehr allgemeine Definition für das
             Verhalten von Maschinen, die über künstliche Intelligenz verfügen sollen. Daher stelle ich mir
             diverse Fragen dazu, unter Anderem: ``Was ist Intelligenz?'', ``Wie kann eine Maschine intelligentes
             Verhalten zeigen?'' und ``Wann gilt eine Maschine als intelligent?''. All diese Fragen sind die
             Grundlage für eine intelligente Maschine, welche eigenständig nach Lösungswegen für ein spezielles
             Problem suchen. Um dies zu testen, stellt Ertel folgende Situation auf: Man stelle sich ein Feld
             vor, auf dem Roboter wild um herzufahren scheinen. Einige folgen einander, andere weichen einander
-            aus, wieder andere haben keine klaren Ziele. \cite[p. 2]{ertel2016grundkurs} Ertel stellt hier die
+            aus, wieder andere haben keine klaren Ziele. \cite[s. 2]{ertel2016grundkurs} Ertel stellt hier die
             Frage ``Sehen wir hier intelligentes Verhalten?'', wobei nach Definition von McCarthy hier von
             intelligentem Verhalten gesprochen werden kann. In \ref{pic:braitenberg-vehikel} sieht man zwei
             simple Verschaltungen dieser sogenannten Breitenberg-Vehikel. Dargestellt werden hier simple
@@ -175,12 +169,12 @@
             Um nun zu verstehen, warum man bei intelligenten Maschinen davon spricht, dass sie über eine
             künstliche Intelligenz verfügen, muss man sich vor Augen halten in welchen Gebieten diese Maschinen
             eingesetzt werden sollen. Unteranderem werden diese künstlichen Intelligenzen in Bereichen eingesetzt,
-            wo es die Situation erfordert, dass die menschliche Intelligenz Unterstützung erfahren muss.\cite[p. 2]{ertel2016grundkurs}
+            wo es die Situation erfordert, dass die menschliche Intelligenz Unterstützung erfahren muss.\cite[s. 2]{ertel2016grundkurs}
             Diese Bereiche sind in jedem Fall speziell und nicht im Generellen zu verstehen. Bei künstlicher
             Intelligenz kann man daher festhalten, dass sie sich auf bestimmte Bereiche konzentriert und dort
             generalisierend wirkt. Elaine Rich hielt daher fest: ``Artificial Intelligence is the study of how
             to make computers do things at which, at the moment, people are better.''. Beispielsweise sind (normale)
-            Computer sehr gut darin Berechnungen in Bruchteilen durchzuführen und diese zu Ergebnissen zu führen.\cite[p. 3]{ertel2016grundkurs}
+            Computer sehr gut darin Berechnungen in Bruchteilen durchzuführen und diese zu Ergebnissen zu führen.\cite[s. 3]{ertel2016grundkurs}
             In anderen Bereichen schneiden dahingegen diese Computer wiederum schlecht ab. Abhilfe, so Ertel,
             könnten daher künstliche Intelligenzen in Form von neuronalen Netzen sein.
 
@@ -253,7 +247,7 @@
             chinesischen Sprache haben.\cite{cole_2014}
 
             Einige bekannte Persönlichkeiten wie Elon Musk, Bill Gates und Stephen Hawking prognostizierten, dass es
-            schon in den nächsten zwei Jahrzehnten zu General AIs kommen kann. \cite[p. 20]{Tamboli2019} Wobei dies laut
+            schon in den nächsten zwei Jahrzehnten zu General AIs kommen kann. \cite[s. 20]{Tamboli2019} Wobei dies laut
             A. Tamboli auch schon deutlich früher geschehen kann. E. Yudkowsky hingegen sagt hingegen, dass es bereits
             2021 zu den ersten Strong AIs kommen könnte.\cite{yudkowsky_2001}. ``If computing speeds double every
             two years, what happens when computer-based AIs are doing the research?''. Was bedeuten würde, dass sobald
@@ -263,13 +257,13 @@
     \section{Safety Engineering}
         In der Vergangenheit kam es durch diverse Fehler zu verschiedene Umfälle, unteranderem wären da zu nennen:
         \textit{Therac 25 Failure}, \textit{Ariane 5 Failure} und \textit{Patriot Failure}. Diese Ereignisse hätten
-        durch die richtige Vorsorge verhindert werden können.\cite[p. 185]{Verma2015} Es gibt also das Bedürfniss
+        durch die richtige Vorsorge verhindert werden können.\cite[s. 185]{Verma2015} Es gibt also das Bedürfniss
         nach ``Reliable Software'', doch wie lässt sich Zuverlässigkeit von Software definieren?
 
         IEEE definiert Software Reliability mit ``the probability that a system will not cause a system failure
         for a specified time under specified conditions. The probability is a function of inputs to, and use of,
         the system as well as function of the existence of faults in the software. The inputs to the system
-        determine whether existing faults, if any encountered''.\cite[p. 183]{Verma2015} Neben einer sichereren und
+        determine whether existing faults, if any encountered''.\cite[s. 183]{Verma2015} Neben einer sichereren und
         besser kontrollierbaren Software, erlangt man darüber hinaus ebenfalls weitere Vorteile, so Verma et al.
         Unteranderem eine höhere Zufriedenheit der Kunden, erhöhte Produktivität, reduzierte Kosten, sowohl für
         von Kunden gemeldete Probleme, als auch für die entstehenden Wartungen.
@@ -284,12 +278,12 @@
 
         Eine Möglichkeit Zuverlässigkeit von Software sicherzustellen ist das Testen. Dabei kann man zwischen
         \textit{Functional Testing}, \textit{Operational Testing} und \textit{Structural Testing} unterscheiden.
-        Jedes dieser Testing Strategien fokussiert dabei einen spezifischen Teil der zu testenden Software. \cite[p. 26]{bertolino2019}
+        Jedes dieser Testing Strategien fokussiert dabei einen spezifischen Teil der zu testenden Software. \cite[s. 26]{bertolino2019}
         Wobei jede Strategie mit den anderen Strategien in Wechselwirkung steht, wie man in \ref{pic:testing-strategies}
         erkennnen kann.
 
         Dieses Vorgehen kennt man bereits aus der klassischen Software Entwicklung und erhält dort großen Zuspruch.
-        Nicht zuletzt wird es durch Praktiken wie Test-Driven-Development in die Tat umgesetzt. \cite[p. 403]{Kollanus2010}
+        Nicht zuletzt wird es durch Praktiken wie Test-Driven-Development in die Tat umgesetzt. \cite[s. 403]{Kollanus2010}
         Durch diese Art zu entwickeln ergibt sich daher ein konsistentes Verhalten in Bezug zu Zuverlässigkeit und
         Sicherheit von Software Produkten. Doch lassen sich diese Ansätze ebenfalls auf das Entwickeln von
         neuronalen Netzwerken, Maschinelles Lernen und Künstlichen Intelligenzen im Speziellen übertragen?
@@ -302,13 +296,13 @@
 
         Das wohl größte Problem in der aktuellen Zeit und auch noch in den nächsten Jahren, ist wohl die Tatsache, dass
         man nicht genau bestimmen kann, welche Folgen es haben wird, wenn es zu einer Superintelligence kommt.
-        \cite[p. 21]{Tamboli2019} Es ist nicht bestimmt, was in ein paar Jahren passieren wird. A. Tamboli beschreibt
+        \cite[s. 21]{Tamboli2019} Es ist nicht bestimmt, was in ein paar Jahren passieren wird. A. Tamboli beschreibt
         dies als die Dinge, über die wir bisher noch nicht nachgedacht haben, was in gewisser Weise korrekt ist.
         Man kann leider nie genau bestimmen, welche Folgen eine gewisse neuartige Technologie hat. Ist es daher richtig
         direkt alles abzulehnen?
 
         Als ein weiteres Problem betrachtet A. Tamboli, dass KIs das \textit{Wie?} beherrschen, jedoch nicht das
-        \textit{Warum?}, bestimmen können.\cite[p. 24]{Tamboli2019} Je nach Trainingssatz kann eine Entscheidung von
+        \textit{Warum?}, bestimmen können.\cite[s. 24]{Tamboli2019} Je nach Trainingssatz kann eine Entscheidung von
         einer KI getroffen werden. Jedoch kann es vorkommen, dass die Daten qualitativ nicht hochwertig sind, oder sogar
         in bestimmter Weise voreingenommen sind. Dies stellt ein großes Problem dar, da eine KI über diese Trainingssätze
         versucht zu generalisieren, eine fehlerhafte Datenquelle wäre daher verheerend für den Erfolg der KI. Dieses
@@ -325,7 +319,7 @@
 
         Safety Engineering für Superintelligent Systems ist tatsächlich ein sehr schwieriges Thema, da man sich
         zunächst Gedanken machen muss, welche Sicherheitsmechanismen man bei \textit{sich-selbst-verbessernden System}
-        einsetzen kann.\cite[p. 9]{yampolskiy2013safety} Denn geht man davon aus, dass Superintelligente Systeme sich
+        einsetzen kann.\cite[s. 9]{yampolskiy2013safety} Denn geht man davon aus, dass Superintelligente Systeme sich
         stetig selbst weiter entwickeln können, dann muss man ebenfalls davon ausgehen, dass diese die vorgesehenen
         Sicherheitsmaßnahmen überwinden können. Dies stellt ein Problem dar, da man dafür sorgen muss, dass diese
         Sicherheitsmechanismen ebenfalls noch in mehreren tausenden Generationen vorhanden sind.
@@ -344,7 +338,7 @@
         und deutlich schlauer als jeder Mensch auf der Erde wäre und dementsprechend über die verschiedensten Fähigkeiten
         verfügt \cite{bostrom_2006}, könnte eine echte Bedrohung darstellen, da sie in ihrem Bewusstsein uns Menschen
         deutlichst voraus wäre.\cite{Beckers2018}. Beckers sagt außerdem, dass es aktuell noch unklar ist, inweit man
-        verstehen soll, dass eine Künstliche Intelligenz die Intelligenz der Menschheit übersteigt.\cite[p. 237]{Beckers2018}
+        verstehen soll, dass eine Künstliche Intelligenz die Intelligenz der Menschheit übersteigt.\cite[s. 237]{Beckers2018}
         Denn \textit{Intelligenz} ist schlichtweg zunächst eine Eigenschaft, die man einem Menschen zuschreiben kann,
         nicht jedoch einer Maschine. Ist dann die Intelligenz eines Computers anders zu verstehen als die Intelligenz
         eines Menschens?
@@ -352,7 +346,7 @@
         Es gilt also zu verhindern, dass eine Strong AI seine Schöpfer überlisten kann. Und somit müssen nachhaltige
         Maßnahmen getroffen werden, die dieses in einer effizienten Weise verhindern können. Denn es gilt stets die
         \textit{humanitären Werte} zu erhalten, ohne dass die Moral verloren geht, weder nach Hardware Fehlern noch
-        nach Software Fehlern.\cite[p. 7]{yampolskiy2013safety}. Dabei wird bereits aktiv daran geforscht, so
+        nach Software Fehlern.\cite[s. 7]{yampolskiy2013safety}. Dabei wird bereits aktiv daran geforscht, so
         Yampolskiy et al.\citep{gordon1998}, \citep{GordonSpears2003} und \citep{Spears}. Doch welche Möglichkeiten
         bestehen nun, um die KI in einer sicheren Umgebung zu halten? Wie genau werden diese Möglichkeiten in der
         Realität implementiert? Und wie können Probleme durch Safety Engineering verhindert werden?
@@ -368,11 +362,11 @@
         Kaufempfehlungen. Sie alle haben gemeinsam, dass sie im Hintergrund einen Ansatz aus dem Gebiet der künstlichen
         Intelligenz verfolgen, denn sie alle streben intelligentes Verhalten an. Doch man kann KI-Systeme auch in
         anderen Gebieten einsetzen, wobei hier der \textit{militärische Einsatz von Drohnentechnologie} beispielhaft
-        zu nennen wäre. \cite[p. 251]{Stulpe2018} Was wäre also wenn eine Drohne nicht den ``Richtigen'' sondern den
+        zu nennen wäre. \cite[s. 251]{Stulpe2018} Was wäre also wenn eine Drohne nicht den ``Richtigen'' sondern den
         ``Falschen'' - wobei hier richtig und falsch völlig wertfrei zu verstehen sind - ausschalten würde?
 
         Damit das Vertrauen in der Sicherheit von künstlichen Intelligenzen und autonomen Agenten nicht dahinschwindet,
-        haben sich diverse Forscher Ideen überlegt, um diverse Fehlschläge zu verhindern.\cite[p. 257]{GordonSpears2003}
+        haben sich diverse Forscher Ideen überlegt, um diverse Fehlschläge zu verhindern.\cite[s. 257]{GordonSpears2003}
         Diese Ideen spiegeln sich somit in einem Regelsatz wieder, welches auf die Agenten übertragen wird. Jedes dieser
         Gesetze muss daher strikt von dem Agent eingehalten werden. Beispielsweise:
         \textit{An agent should not cause harm.} Beim Einsatz von militärischen Drohnen wäre dies jedoch kein
@@ -440,7 +434,7 @@
         Von-Neumann-Architektur, der Turing-Architektur, Quantencomputer oder ähnliche noch \textit{unbekannte} Hardware
         läuft. In jedem Fall wird es in gewisserweise aus natürlichen Materialien bestehen, welche wiederum Komponenten
         bilden. Diese Komponenten haben in jedem Fall einen bestimmten Zweck. Erlangt nun eine AGI Zugriff auf diese
-        Hardware könnte es möglich sein, diese zu zweckentfremden und somit für andere Dinge zu verwenden.\cite[p. 199]{yampolskiy2012leakproofing}
+        Hardware könnte es möglich sein, diese zu zweckentfremden und somit für andere Dinge zu verwenden.\cite[s. 199]{yampolskiy2012leakproofing}
         Ziel dieser Zweckentfremdung ist immer das Lösen aus dem Confinement-Protokoll. Eine AGI könnte also versuchen
         über diese Komponenten Informationen über einen Covert-Channel zun versenden. Yampolskiy spricht deshalb von
         zwei sehr bekannten Covert-Channeln:
@@ -453,12 +447,12 @@
         Bei den Storage Channels werden Informationen übertragen indem System Komponenten modifiziert werden. Bei Timing
         Channels hingegen, werden Komponente so manipuliert, dass auftretende Events in ihrem zeitlichen Ablauf geändert
         werden. Dadurch können wiederum Informationen übertragen werden, welche von der Außenwelt verstanden werden.
-        \cite[p. 200]{yampolskiy2012leakproofing}
+        \cite[s. 200]{yampolskiy2012leakproofing}
 
         Die Möglichkeiten sehe ich eher als weniger risikoreich, da es dennoch jemanden geben muss, der diese Informationen
         verarbeiten kann. Viel wahrscheinlicher stelle ich mir daher vor, dass eine AGI die Hardware so manipuliert,
         sodass sie tatsächlich ausbrechen kann. Etwa indem sie die Hardware des Confinement-Protokoll direkt angreift.
-        \cite[p. 200]{yampolskiy2012leakproofing} Beispielsweise indem sie die Last auf dem Prozessor derart erhöht,
+        \cite[s. 200]{yampolskiy2012leakproofing} Beispielsweise indem sie die Last auf dem Prozessor derart erhöht,
         dass die Temperatur drastisch ansteigt und damit die Hardware zerstört oder physisch einschränkt.
 
 
@@ -493,7 +487,7 @@
         zu verhindern, überlegt man sich Maßnahmen, sodass es nicht zum Ausbruch der KI kommen kann.
 
         \subsection{The AI-Box Experiment}
-        Der schnellste Weg für eine AI auszubrechen, stellt der Weg über den Menschen dar.\cite[p. 306]{armstrongforthcoming}
+        Der schnellste Weg für eine AI auszubrechen, stellt der Weg über den Menschen dar.\cite[s. 306]{armstrongforthcoming}
         Wie bereits in \ref{section:sea} erläutert, ist es leicht eine Social Engineering Attacke durchzuführen. Um dies
         zu zeigen, hat Eliezer Yudkowsky ein einfaches Experiment durchgeführt. Das AI-Box Experiment zeigt, dass selbst
         mit \textit{Human Intelligence} es möglich ist aus einem \textit{Confinement} auszubrechen. Dabei tritt E.
@@ -512,54 +506,54 @@
         ausmacht, wäre zu erwähnen, dass diese simpel gesagt, lediglich natürliche Sprache als Ein- sowie ausgabe zulässt.
         Damit versucht man, die künstliche Intelligenz weitesgehend von der Außenwelt abzuschirmen. Physikalisch gesehen,
         können also nur noch geringe Risiken wirken, welche weiter durch zusätzliche Maßnahmen eingeschränkt werden können,
-        beispielsweise ein faradaischer Käfig als Schirm vor elektromagnetische Wellen nach Außen. \cite[p. 308]{armstrongforthcoming}
+        beispielsweise ein faradaischer Käfig als Schirm vor elektromagnetische Wellen nach Außen. \cite[s. 308]{armstrongforthcoming}
         So ist es beispielsweise nicht möglich, dass elektromagnetische Strahlung nach außen treten kann.
-        ``Resource acquisition is impossible when no resources are available'' \cite[p. 4]{ebhardt2018threat} Womit die
+        ``Resource acquisition is impossible when no resources are available'' \cite[s. 4]{ebhardt2018threat} Womit die
         Optimierungsmöglichkeiten deutlich reduziert sind, sodass eine Selbstoptimierung nicht weiter möglich ist.
 
         \subsection{Psychological Boxing}
 
         Sofern es zur erfolgreichen Umsetzung der OracleAI kommt, bleibt es trotzdem bei den Problemen der Social
-        Engineering Attacks, auch dann, wenn man erfolgreich die AI in \textit{sealed hardware} eingelassen hat.\cite[p. 4]{ebhardt2018threat}
+        Engineering Attacks, auch dann, wenn man erfolgreich die AI in \textit{sealed hardware} eingelassen hat.\cite[s. 4]{ebhardt2018threat}
         Zum aktuellen Zeitpunkt gibt es jedoch nicht viele Quellen zu diesem Themenbereich. Gerade weil AGIs den Intellekt
         eines jeden Menschen übersteigen würde, ist es tatsächlich sehr schwierig, dies zu verhindern, ohne einen Nachteil
-        dadurch zu bekommen.\cite[p. 204]{yampolskiy2012leakproofing} Die einzige Möglichkeit eine 100 Prozentige Sicherheit
+        dadurch zu bekommen.\cite[s. 204]{yampolskiy2012leakproofing} Die einzige Möglichkeit eine 100 Prozentige Sicherheit
         zu erhalten, ist es die KI gänzlich von der Kommunikation mit Menschen abzuschirmen, sodass diese keinerlei
         soziale Interaktionen durchführen können. Dies erzeugt jedoch das Problem, dass man dann keinen Nutzen durch
         die AGI erhalten kann.
 
         \citealp{armstrongforthcoming} schlagen deshalb vor, die Ausgaben der AI zu limitieren (\textit{throtteling}), sodass
-        lange Gespräche mit jener von Anfang an nicht möglich sind.\cite[p. 306]{armstrongforthcoming} Es ist somit
+        lange Gespräche mit jener von Anfang an nicht möglich sind.\cite[s. 306]{armstrongforthcoming} Es ist somit
         ebenfalls nicht möglich, dass die AI unterschwellige Botschaften vermittelt, wenn man die Ausgaben auf wenige
         begrenzt, beispielsweise: \textit{ja}, \textit{nein} oder \textit{unbestimmt}. Eine erfolgreiche Social Engineering
-        Attacke wäre damit grundsätzlich nicht mehr so einfach durchzuführen.\cite[p. 309]{armstrongforthcoming}
+        Attacke wäre damit grundsätzlich nicht mehr so einfach durchzuführen.\cite[s. 309]{armstrongforthcoming}
         Sollte es jedoch zu einer \textit{leakproof singularity} kommen, wird es der Menschheit kein Nutzen bringen, da
         wertvolle Informationen per Definition nicht mehr nach Außen treten.
 
         \subsection{Virtual Worlds}
         Eine weitere Limitierungstechnik stellen die \textit{Virtual Worlds} dar. \citep{chalmers2010singularity} sagt,
         dass es gut wäre, wenn man AI -und AI+-Systeme (gemeint sind hier AGIs) zunächst in einer virtuellen Welt
-        entwickelt. \cite[p. 37]{chalmers2010singularity} Die künstliche Intelligenz läuft also in einer virtuellen Umgebung
+        entwickelt. \cite[s. 37]{chalmers2010singularity} Die künstliche Intelligenz läuft also in einer virtuellen Umgebung
         innerhalb eines Computers, sodass die KI sich vollständig in dieser Welt entfalten kann. So können beispielsweise
         die Abläufe und Entscheidungen der KI studiert und analysiert werden, ohne dass die KI Schaden in der echten Welt
         anrichten kann. Alle Ausgaben sowie Eingaben passieren lediglich indirekt und in jedem Fall mit einer limitierten
-        Bandbreite, um \textit{Information leakage} zu verhindern. \cite[p. 310]{armstrongforthcoming} Somit wird auch
+        Bandbreite, um \textit{Information leakage} zu verhindern. \cite[s. 310]{armstrongforthcoming} Somit wird auch
         nicht ein Mensch überprüfen, ob alles in Ordnung ist, sondern eine \textit{dumb process}, welcher einzig und allein
         dafür gemacht ist, aufzuspüren ob die KI die Herrschaft in der simulierten Welt übernehmen möchte.
 
         Für technische, nicht-soziale Fragen reicht es daher aus die AGI in einer gering-komplexen Welt laufen zu lassen.
-        \cite[p. 310]{armstrongforthcoming} Somit würde man jegliches Wissen, welches aus unserer Welt entstammt nicht
+        \cite[s. 310]{armstrongforthcoming} Somit würde man jegliches Wissen, welches aus unserer Welt entstammt nicht
         weiter geben, sodass die AGI nicht bemerkt, dass sie in einer \textit{dummy Welt} lebt.
 
         \citealp{armstrongforthcoming} sagen daher, dass wenn wir detailiertes Wissen über soziale oder wirtschaftliche
         Fragen erhalten wollen, die AGI ebenfalls detailiertes Grundwissen über soziale und wirtschaftliche Aspekte der
         Menschheit benötigt. Ein Angriff über eine \textit{Social Engineering Attacke} ist daher unausweichlich, da die
-        AGI das benötigte Wissen hat um diese Form des Angriffs durchzuführen.\cite[p. 310]{armstrongforthcoming}
+        AGI das benötigte Wissen hat um diese Form des Angriffs durchzuführen.\cite[s. 310]{armstrongforthcoming}
 
 
         \subsection{Kombination mit anderen Limitierungstechniken}
         Weitere Möglichkeiten die Möglichkeiten einer AGI zu beschränken bestehen darin, dass man beispielsweise die
-        AGI nach jeder Frage beziehungsweise Aufgabe zurücksetzt.\cite[p. 309]{armstrongforthcoming} Dies würde dazu
+        AGI nach jeder Frage beziehungsweise Aufgabe zurücksetzt.\cite[s. 309]{armstrongforthcoming} Dies würde dazu
         führen, dass die AGI Wissen aus vorherigen Fragen verliert. Benötigt eine Frage jedoch Wissen aus der vorherigen
         Frage, wird dieses in Ausnahmen zur Datenbank hinzugefügt, sodass dieses Wissen der AGI bewusst ist.
 
@@ -578,6 +572,8 @@
     %% Einbinden der Quellen
     %% https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex#Reference_guide
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \newpage
     \addcontentsline{toc}{section}{\bibname}
     \bibliography{quellen}
     \bibliographystyle{dinat}
