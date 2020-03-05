@@ -366,8 +366,8 @@
 
         \subsection{AI Safety in klassischen AI Systems}
 
-        Ausgehend davon, dass Problem bei einer Superintelligenz und im weiteren Sinne eine Artificial General
-        Intelligence die wohl größere Bedrohung für die Menschheit darstellt, fragt man sich ebenfalls wie man
+        Ausgehend davon, dass Probleme bei einer Superintelligenz und im weiteren Sinne eine Artificial General
+        Intelligence die wohl größere Bedrohung für die Menschheit darstellt, fragt man sich ebenfalls, wie man
         sicherstellen kann, dass eine ``normale'' (\textit{weak}) AI korrekt und sicher funktioniert. Wie schon
         zuvor erwähnt, werden KI Systeme in der heutigen Gesellschaft bereits häufig eingesetzt. Sei es die
         Stimme im Handy, welche das Flurlicht anschaltet, selbstfahrende autonome Fahrzeuge oder die Amazon
@@ -375,14 +375,14 @@
         Intelligenz verfolgen, denn sie alle streben intelligentes Verhalten an. Doch man kann KI-Systeme auch in
         anderen Gebieten einsetzen, wobei hier der \textit{militärische Einsatz von Drohnentechnologie} beispielhaft
         zu nennen wäre. \cite[s. 251]{Stulpe2018} Was wäre also wenn eine Drohne nicht den ``Richtigen'' sondern den
-        ``Falschen'' - wobei hier richtig und falsch völlig wertfrei zu verstehen sind - ausschalten würde?
+        ``Falschen'' - wobei hier richtig und falsch völlig wertfrei zu verstehen sind - verletzen würde?
 
         Damit das Vertrauen in der Sicherheit von künstlichen Intelligenzen und autonomen Agenten nicht dahinschwindet,
-        haben sich diverse Forscher Ideen überlegt, um diverse Fehlschläge zu verhindern.\cite[s. 257]{GordonSpears2003}
-        Diese Ideen spiegeln sich somit in einem Regelsatz wieder, welches auf die Agenten übertragen wird. Jedes dieser
+        haben sich diverse Forscher*innen Ideen überlegt, um mögliche Fehlschläge zu verhindern \cite[s. 257]{GordonSpears2003}.
+        Diese Ideen spiegeln sich somit in einem Regelsatz wieder, welcher auf die Agenten übertragen wird. Jedes dieser
         Gesetze muss daher strikt von dem Agent eingehalten werden. Beispielsweise:
         \textit{An agent should not cause harm.} Beim Einsatz von militärischen Drohnen wäre dies jedoch kein
-        Zielführender Ansatz, da eben genau diese Drohnen für solche Zwecke konzipiert wurden. Gordon-Spears fordert daher
+        zielführender Ansatz, da eben genau diese Drohnen für solche Zwecke konzipiert wurden. Gordon-Spears fordert daher
         eine Kombination aus:
 
         \begin{enumerate}
@@ -393,33 +393,36 @@
             \item \textit{Internal methods for agent self-regulation, i.e., the ability to operationalize/interpret the laws
             and self-verify that they are obeyed to the best of an agent's knowledge}
         \end{enumerate}
-
-        Was wiederum dafür sorgen würde, dass sich diese Agenten selbst regulieren müssen. Schwer fallen wird es einem
-        dennoch den ``richtigen'' Satz von Ethiken und Moralvorstellungen zu finden. Außerdem sind \textit{emotions} und
+        \cite{GordonSpears2003}
+        Dies würde wiederum dafür sorgen, dass sich diese Agenten selbst regulieren müssen. Dennoch wird es schwerfallen,
+        den ``richtigen'' Satz von Ethiken und Moralvorstellungen zu finden. Außerdem sind \textit{emotions} und
         \textit{sensations} auch schwierig, da genau das den großen Vorteil von künstlicher Intelligenz eingrenzen würde,
         da so eine KI nicht rational entscheiden würde.
 
     \section{The Artificial Confinementapproach}
 
-        Eine Möglichkeit eine AI zu beschränken ist ihr die Rechte zu nehmen um mit externen Ressourcen zu interagieren.
-        Dabei stellt das Confinementapproach nach \citep{lampson1973note} die Grundlage, um über Strategien zur Verhinderung
-        von Tragödien bei Artificial General Intelligences diskutieren zu können. Man stellt sich dabei vor, dass ein Programm
-        in einer sicheren Umgebung ausgeführt wird und durch ein führendes Programm aufgerufen wird. Das Programm, welches
-        beschränkt werden soll nennt Lampson dabei \textit{service} und das führende Programm nennt er \textit{customer}.
-        Es muss dabei sichergestellt werden, dass der Service dem Customer keinen Schaden zufügen kann \cite{lampson1973note},
-        sodass dieser frei aggieren kann.
+        Eine Möglichkeit eine AI zu beschränken, ist ihr die Rechte zu nehmen um mit externen Ressourcen zu interagieren.
+        Dabei stellt das Confinementapproach nach \cite{lampson1973note} die Grundlage,
+        um über Strategien zur Verhinderung von Tragödien bei Artificial General Intelligences diskutieren zu können.
+        Man stellt sich dabei vor, dass ein Programm in einer sicheren Umgebung ausgeführt wird und durch ein führendes
+        Programm aufgerufen wird. Das Programm, welches beschränkt werden soll, nennt Lampson dabei \textit{Service} und
+        das führende Programm nennt er \textit{Customer}. Es muss dabei sichergestellt werden, dass der Service dem
+        Customer keinen Schaden zufügen kann \cite{lampson1973note}, sodass dieser frei aggieren kann.
 
         Lampson stellt dabei folgende Regeln auf:
-        \begin{enumerate}
-            \item ``\textit{Total isolation}: A confined program shall make no calls on any other program.''
-            \item ``\textit{Transitivity}: If a confined program calls another program which is not trusted, the
-            called program must also be confined.''
-            \item ``\textit{Masking}: A program to be confined must allow its caller to determine all its inputs into
-            legitimate and covert channels. We say that the channels are masked by the caller.''
-            \item ``\textit{Enforcement}: The supervisor must ensure that a confined program's input to covert
-            channels conforms to the caller's specifications.''
-        \end{enumerate}
+        \begin{quote}
+            ``\textit{Total isolation}: A confined program shall make no calls on any other program.''
 
+            ``\textit{Transitivity}: If a confined program calls another program which is not trusted, the
+            called program must also be confined.''
+
+            ``\textit{Masking}: A program to be confined must allow its caller to determine all its inputs into
+            legitimate and covert channels. We say that the channels are masked by the caller.''
+
+            ``\textit{Enforcement}: The supervisor must ensure that a confined program's input to covert
+            channels conforms to the caller's specifications.''
+        \end{quote}
+        \cite{lampson1973note}
         Eingeführt wurden durch Lampson daher auch zwei mögliche Channels, durch die Informationen nach außen treten
         können.\cite{yampolskiy2012leakproofing} Zunächst die \textit{Legitimate Channels}, die per-design im Confinement
         Protokoll enthalten sind. Die \textit{Covert Channels} hingegen, sind nicht integriert um darüber zu kommunizieren
