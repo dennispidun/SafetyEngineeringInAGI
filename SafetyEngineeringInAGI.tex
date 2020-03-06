@@ -425,97 +425,92 @@
         \cite{lampson1973note}
         Eingeführt wurden durch Lampson daher auch zwei mögliche Channels, durch die Informationen nach außen treten
         können.\cite{yampolskiy2012leakproofing} Zunächst die \textit{Legitimate Channels}, die per-design im Confinement
-        Protokoll enthalten sind. Die \textit{Covert Channels} hingegen, sind nicht integriert um darüber zu kommunizieren
-        Yampolskiy et al. redet hier beispielsweise von Möglichkeiten bestimmte Komponenten oder Dinge auszunutzen, die
-        für gewisse Zwecke nicht vorgesehen sind, wie zum Beispiel die Lüftersteuerung, um darüber Morse-Codes zu senden.
+        Protokoll enthalten sind. Die \textit{Covert Channels} hingegen, sind nicht integriert um darüber zu kommunizieren.
+        \citeauthor*{yampolskiy2012leakproofing} berichten hier beispielsweise von Möglichkeiten, bestimmte Komponenten oder
+        Dinge auszunutzen, die für gewisse Zwecke nicht vorgesehen sind, wie zum Beispiel die Lüftersteuerung, um darüber
+        Morse-Codes zu senden \cite[s. 204]{yampolskiy2012leakproofing}.
 
         \subsection{Mögliche Escape Paths}
         Im Folgenden werden mögliche Routen und Wege erläutert, wie eine AGI ausbrechen kann, auch wenn sie durch ein
-        Confinement-Protokoll geschützt wird. Dabei werden die von \citep{yampolskiy2012leakproofing} aufgestellten
-        Möglichkeiten diskutiert und genauer analysiert. Hvistendahl berichtet daher, dass sollte eine AI schlau genug
+        Confinement-Protokoll geschützt wird. Dabei werden die von \citeauthor{yampolskiy2012leakproofing} aufgestellten
+        Möglichkeiten diskutiert und genauer analysiert. \citep{hvistendahl_2019} berichtet daher, dass sollte eine AI schlau genug
         sein, könnte es passieren, dass diese besser mit den Beschränkungen umgehen kann, als die Ersteller selbst.
-        \cite{hvistendahl_2019} Das Zitat ``waking up in a prison built by a bunch of blind 5-year-olds.'' bringt es
-        daher genaustens auf den Punkt. Denn wenn wir eine Künstliche Intelligenz entwickeln können, die die menschliche
-        Intelligenz um weiten übersteigt, dann wird sie mit Hindernissen die wir ihr vorlegen mit Leichtigkeit umgehen
-        können.
+        Das Zitat ``waking up in a prison built by a bunch of blind 5-year-olds.'' bringt es daher genaustens auf den Punkt.
+        Falls Menschen eine KI entwickeln können, welche die menschliche Intelligenz enorm übersteigt, wird diese Hindernisse,
+        welche ihr vorgelegt werden, mit Leichtigkeit umgehen können.
 
-        \subsubsection{Physical}
+        \subsubsection{Physical Attacks}
         Yampolskiy beschreibt diese Art der Angriffe als \textit{System Resource Attacks}, wobei hier davon ausgegangen
-        wird, dass die AGI die physischen Möglichkeiten beispielsweise in Form von Komponenten ausnutzt um darüber zu
+        wird, dass die AGI die physischen Möglichkeiten beispielsweise in Form von Komponenten ausnutzt, um darüber zu
         kommunizieren und sich so einen Weg nach ``draußen'' zu verschaffen.\cite{yampolskiy2012leakproofing}
 
-        Yampolskiy spricht hier auch von \textit{System Resource Attacks}, da ein direkter Angriff auf die zur Verfügung
-        stehenden Komponten durchgeführt wird. Dabei wird davon ausgegangen, dass die Software der AGI auf der
-        Von-Neumann-Architektur, der Turing-Architektur, Quantencomputer oder ähnliche noch \textit{unbekannte} Hardware
-        läuft. In jedem Fall wird es in gewisserweise aus natürlichen Materialien bestehen, welche wiederum Komponenten
-        bilden. Diese Komponenten haben in jedem Fall einen bestimmten Zweck. Erlangt nun eine AGI Zugriff auf diese
-        Hardware könnte es möglich sein, diese zu zweckentfremden und somit für andere Dinge zu verwenden.\cite[s. 199]{yampolskiy2012leakproofing}
-        Ziel dieser Zweckentfremdung ist immer das Lösen aus dem Confinement-Protokoll. Eine AGI könnte also versuchen
-        über diese Komponenten Informationen über einen Covert-Channel zun versenden. Yampolskiy spricht deshalb von
-        zwei sehr bekannten Covert-Channeln:
+        \citeauthor*{yampolskiy2012leakproofing} spricht hier auch von \textit{System Resource Attacks}, da ein direkter
+        Angriff auf die zur Verfügung stehenden Komponenten durchgeführt wird \citeyearpar{yampolskiy2012leakproofing}.
+        Dabei wird davon ausgegangen, dass die Software der AGI auf der Von-Neumann-Architektur, der Turing-Architektur,
+        Quantencomputer oder ähnliche noch \textit{unbekannte} Hardware läuft. In jedem Fall wird es in gewisserweise aus
+        natürlichen Materialien bestehen, welche wiederum Komponenten bilden. Diese Komponenten haben in jedem Fall einen
+        bestimmten Zweck. Erlangt nun eine AGI Zugriff auf diese Hardware, könnte es möglich sein, diese zu zweckentfremden
+        und somit für andere Dinge zu verwenden \cite[s. 199]{yampolskiy2012leakproofing}. Ziel dieser Zweckentfremdung
+        ist immer das Lösen aus dem Confinement-Protokoll. Eine AGI könnte also versuchen über diese Komponenten
+        Informationen über einen Covert-Channel zun versenden. Yampolskiy spricht deshalb von zwei sehr bekannten
+        Covert-Channeln:
 
         \begin{enumerate}
             \item \textit{Storage Channels}
             \item \textit{Timing Channels}
         \end{enumerate}
 
-        Bei den Storage Channels werden Informationen übertragen indem System Komponenten modifiziert werden. Bei Timing
-        Channels hingegen, werden Komponente so manipuliert, dass auftretende Events in ihrem zeitlichen Ablauf geändert
-        werden. Dadurch können wiederum Informationen übertragen werden, welche von der Außenwelt verstanden werden.
-        \cite[s. 200]{yampolskiy2012leakproofing}
+        Bei den Storage Channels werden Informationen übertragen, indem System Komponenten modifiziert werden. Bei Timing
+        Channels hingegen werden Komponente so manipuliert, dass auftretende Events in ihrem zeitlichen Ablauf geändert
+        werden. Dadurch können wiederum Informationen übertragen werden, welche von der Außenwelt verstanden werden
+        \cite[s. 200]{yampolskiy2012leakproofing}.
 
-        Die Möglichkeiten sehe ich eher als weniger risikoreich, da es dennoch jemanden geben muss, der diese Informationen
-        verarbeiten kann. Viel wahrscheinlicher stelle ich mir daher vor, dass eine AGI die Hardware so manipuliert,
-        sodass sie tatsächlich ausbrechen kann. Etwa indem sie die Hardware des Confinement-Protokoll direkt angreift.
-        \cite[s. 200]{yampolskiy2012leakproofing} Beispielsweise indem sie die Last auf dem Prozessor derart erhöht,
-        dass die Temperatur drastisch ansteigt und damit die Hardware zerstört oder physisch einschränkt.
-
-
-        Im Grunde versucht man dabei die Künstliche Intelligenz physisch einzusperren und von vornherein von der Außenwelt
-        auszusperren. Wenn man sich nun vorstellt, dass in der Zukunft, wo es künstliche Intelligenzen, welche weit von
+        Wenn man sich nun vorstellt, dass in der Zukunft, wo es künstliche Intelligenzen, welche weit von
         der Intelligenz eines Menschens entfernt sind, geben wird, dann wird in jedem Fall diese künstliche Intelligenz
         versuchen aus der Umgebung auszubrechen, sodass diese mehr Macht erlangen kann. Dies stellt die Befürchtung für
-        den schlechtesten zu erwartenden Fall dar.\cite{yampolskiy2012leakproofing}
+        den schlechtesten zu erwartenden Fall dar \cite{yampolskiy2012leakproofing}.
 
         \subsubsection{Social Engineering Attacks}\label{section:sea}
         Ein weiteres mögliches Angriffszenario lässt sich leicht vorstellen. Man greift nun nicht mehr das System selbst
-        an, sondern den schwächsten Teil des Gesamtsystems: den Menschen.\cite{armstrongforthcoming}, \cite{yampolskiy2012leakproofing}
+        an, sondern den schwächsten Teil des Gesamtsystems: den Menschen\cite{armstrongforthcoming}, \cite{yampolskiy2012leakproofing}.
         Man stellt sich hierbei vor, dass ein Mensch \textit{belastet von Fehlern}, \textit{abhängig von Energie}
         und vor allem angreifbar durch sogenannte \textit{Social Engineering Attacks} ist. Social Engineering (SE)
         beschreibt die Herangehensweise, um in ein System hereinzukommen. Hierbei wird ein spezifischer Angriff direkt
-        auf eine bestimmte Person gefahren, sodass diese ihm Zugriff gewährt. \cite{yampolskiy2012leakproofing} Es wird
+        auf eine bestimmte Person gefahren, sodass diese ihm Zugriff gewährt \cite[s. 198]{yampolskiy2012leakproofing}. Es wird
         also versucht, über den Menschen an bestimmte Ressourcen zu gelangen oder bestimmte Vorteile zu erlangen. Triviale
         Angriffe können daher schon einfaches Lügen oder Verschweigen von Informationen sein.
         Stelle man sich nun eine Künstliche Intelligenz vor, welche über genügend Kapazität verfügt, dann kann eine solche
-        KI ein Target sehr einfach überlisten und sogenannte \textit{super-briberies} durchführen. \cite{yampolskiy2012leakproofing}
+        KI ein Target sehr einfach überlisten und sogenannte \textit{super-briberies} durchführen \cite{yampolskiy2012leakproofing}.
         Die KI plant Dinge gewissenhaft und mit großer Vorsicht, die Person steht daher im Fokus und wird beispielsweise
-        mit Gesundheit und Unversehrtheit bestochen, sodass die KI ``freigelasse'' wird. Außerdem könnte man sich noch
+        mit Gesundheit und Unversehrtheit bestochen, sodass die KI ``freigelassen'' wird. Außerdem könnte man sich noch
         vorstellen, dass eine KI versucht dem sogenannten Guard Angst zu machen. Die KI wird versuchen persönliche
-        Informationen zu missbrauchen, sodass diese sich dadurch einen Vorteil verschaffen kann. Im schlechtesten Fall
-        wird eine KI dem Guard androhen geliebte Familienmitglieder zu töten oder zu foltern, falls diese sich aus dem
-        Confinement in der Zukunft befreien kann.
+        Informationen zu missbrauchen, sodass diese sich dadurch einen Vorteil verschaffen kann. Im schlimmsten Fall
+        könnte die KI dem Guard androhen, Familienmitglieder zu foltern oder zu töten, falls diese sich aus dem Cofinement
+        in der Zukunft befreien kann.
 
-        \section{Kritik des Artificial Confinementapproachs}
+        \subsection{Kritik des Artificial Confinementapproachs}
 
     \section{AI Boxing Strategies}
         Wie zuvor erwähnt, kann es für eine KI verschiedene Möglichkeiten geben aus einem System auszubrechen. Um dies
-        zu verhindern, überlegt man sich Maßnahmen, sodass es nicht zum Ausbruch der KI kommen kann.
+        zu verhindern, müssen Maßnahmen überlegt werden, sodass es nicht zu einem Ausbruch einer KI kommen kann.
 
         \subsection{The AI-Box Experiment}
-        Der schnellste Weg für eine AI auszubrechen, stellt der Weg über den Menschen dar.\cite[s. 306]{armstrongforthcoming}
-        Wie bereits in \ref{section:sea} erläutert, ist es leicht eine Social Engineering Attacke durchzuführen. Um dies
-        zu zeigen, hat Eliezer Yudkowsky ein einfaches Experiment durchgeführt. Das AI-Box Experiment zeigt, dass selbst
-        mit \textit{Human Intelligence} es möglich ist aus einem \textit{Confinement} auszubrechen. Dabei tritt E.
-        Yudkowsky als \textit{menschliche AI} gegen einen \textit{Gatekeeper} an. Schafft es Yudkowsky, den Gatekeeper
-        zu überzeugen, dass er freigelassen werden muss, so verspricht er dem Gatekeeper 10 Dollar zu geben. Das ganze
-        Experiment ist limitiert auf 2 Stunden und findet in einem Chatsystem statt. Yudkowsky hat es häufig geschafft,
-        alleine durch Argumentation freizukommen. Eine AGI sollte dahingegen deutlich kompetenter sein, da diese deutlich
-        mehr Möglichkeiten beispielsweise im Bereich der Bestechung hat.
+        Der schnellste Weg für eine AI auszubrechen, stellt den Weg über den Menschen dar \cite[s. 306]{armstrongforthcoming}.
+        Wie bereits zuvor erläutert, ist es leicht eine Social Engineering Attacke durchzuführen. Um dies zu zeigen, hat
+        \citeauthor{yudkowsky_2002} ein einfaches Experiment durchgeführt \citeyearpar{yudkowsky_2002}. Das AI-Box Experiment
+        zeigt, dass es selbst mit \textit{Human Intelligence} möglich ist aus einem \textit{Confinement} auszubrechen.
+        Dabei tritt \citeauthor{yudkowsky_2002} als \textit{menschliche AI} gegen einen \textit{Gatekeeper} an. Schafft
+        es Yudkowsky, den Gatekeeper zu überzeugen, dass er freigelassen werden muss, so verspricht er dem Gatekeeper
+        10 Dollar zu geben. Das Experiment ist limitiert auf 2 Stunden und findet in einem Chatsystem statt \cite{yudkowsky_2002}.
+        Yudkowsky hat es häufig geschafft, alleine durch Argumentation freizukommen. Eine AGI sollte dahingegen deutlich
+        kompetenter sein, da diese deutlich mehr Möglichkeiten im Bereich der Bestechung hat. \citeauthor{yudkowsky_2002}
+        spricht hier davon, dass er lediglich 10 Dollar versprechen konnte. Eine KI, die freigelassen wird kann hier
+        deutlich mehr anbieten, da man davon ausgeht, dass sie deutlich mehr Macht erlangen kann \citeyearpar{yudkowsky_2002}.
 
         \subsection{Physical Boxing}
 
         Um die genannten Probleme zu umgehen, entwickelten daher schon Armstrong et al. Konzepte zur sogenannten OracleAI,
-        bei der es darum geht, die Interaktionsmöglichkeiten auf ein Minimum zu beschränken.\cite{armstrongforthcoming}
+        bei der es darum geht, die Interaktionsmöglichkeiten auf ein Minimum zu beschränken \cite*{armstrongforthcoming}.
         Sie stellen Konzepte auf, die Per-Design dafür sorgen, dass ein Ausbrechen der AI nicht möglich ist. Wer nun möchte
         kann dies durch zusätzliche Mechanismen weiter einschränken. Um nur kurz zu erklären, was die sogenannte OracleAI
         ausmacht, wäre zu erwähnen, dass diese simpel gesagt, lediglich natürliche Sprache als Ein- sowie ausgabe zulässt.
