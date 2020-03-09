@@ -402,12 +402,12 @@
     \section{The Artificial Confinementapproach}
 
         Eine Möglichkeit eine AI zu beschränken, ist ihr die Rechte zu nehmen um mit externen Ressourcen zu interagieren.
-        Dabei stellt das Confinementapproach nach \cite{lampson1973note} die Grundlage,
-        um über Strategien zur Verhinderung von Tragödien bei Artificial General Intelligences diskutieren zu können.
-        Man stellt sich dabei vor, dass ein Programm in einer sicheren Umgebung ausgeführt wird und durch ein führendes
-        Programm aufgerufen wird. Das Programm, welches beschränkt werden soll, nennt Lampson dabei \textit{Service} und
-        das führende Programm nennt er \textit{Customer}. Es muss dabei sichergestellt werden, dass der Service dem
-        Customer keinen Schaden zufügen kann \cite{lampson1973note}, sodass dieser frei aggieren kann.
+        Dabei stellt das Confinementapproach nach \cite{lampson1973note} die Grundlage, um über Strategien zur Verhinderung
+        von Tragödien bei Artificial General Intelligences diskutieren zu können. Man stellt sich dabei vor, dass ein
+        Programm in einer sicheren Umgebung ausgeführt wird und durch ein führendes Programm aufgerufen wird. Das Programm,
+        welches beschränkt werden soll, nennt Lampson dabei \textit{Service} und das führende Programm nennt er
+        \textit{Customer}. Es muss dabei sichergestellt werden, dass der Service dem Customer keinen Schaden zufügen kann
+        \cite{lampson1973note}, sodass dieser frei aggieren kann.
 
         Lampson stellt dabei folgende Regeln auf:
         \begin{quote}
@@ -488,12 +488,6 @@
         könnte die KI dem Guard androhen, Familienmitglieder zu foltern oder zu töten, falls diese sich aus dem Cofinement
         in der Zukunft befreien kann.
 
-        \subsection{Kritik des Artificial Confinementapproachs}
-
-    \section{AI Boxing Strategies}
-        Wie zuvor erwähnt, kann es für eine KI verschiedene Möglichkeiten geben aus einem System auszubrechen. Um dies
-        zu verhindern, müssen Maßnahmen überlegt werden, sodass es nicht zu einem Ausbruch einer KI kommen kann.
-
         \subsection{The AI-Box Experiment}
         Der schnellste Weg für eine AI auszubrechen, stellt den Weg über den Menschen dar \cite[s. 306]{armstrongforthcoming}.
         Wie bereits zuvor erläutert, ist es leicht eine Social Engineering Attacke durchzuführen. Um dies zu zeigen, hat
@@ -506,6 +500,41 @@
         kompetenter sein, da diese deutlich mehr Möglichkeiten im Bereich der Bestechung hat. \citeauthor{yudkowsky_2002}
         spricht hier davon, dass er lediglich 10 Dollar versprechen konnte. Eine KI, die freigelassen wird kann hier
         deutlich mehr anbieten, da man davon ausgeht, dass sie deutlich mehr Macht erlangen kann \citeyearpar{yudkowsky_2002}.
+
+        \subsection{Kritik am AI-Box Experiment}
+        Gegenüber den Confinement-Approach wurde bereits viel Kritik geäußert \cite[s. 203]{yampolskiy2012leakproofing}.
+        Dabei basiert vieles auf dem AI-Box Experiment selbst, und so übt auch \citeauthor{yampolskiy2012leakproofing} Kritik
+        an dem von \citeauthor{yudkowsky_2002} aufgestellten Experiment \citeyearpar{yampolskiy2012leakproofing}. Er spricht
+        von, dass das Experminent \textit{unscientific} und \textit{explicitly designed to show impossibility of confinement}
+        \citeyearpar{yampolskiy2012leakproofing}. \citeauthor{yampolskiy2012leakproofing} gibt hier unteranderem folgende
+        Gründe an:
+        \begin{enumerate}
+            \item \textit{the participant selection was not random}
+            \item \textit{participants [...] are disproportionately likely to subscribe to his world view}
+        \end{enumerate}
+        \cite[s. 203]{yampolskiy2012leakproofing}. Da die Teilnehmer des Experiments ebenfalls Mitglieder des Forums von
+        \citeauthor{yudkowsky_2002} waren, liegt es nahe, dass diese unter Umständen voreingenommen sind und den Ansichten
+        von Yudkowsky glauben schenken \citeyearpar{yudkowsky_2002}. Außerdem galten bei dem Experiment zusätzlich keine
+        weiteren Einschränkungen, so wie es in der Realität wäre:
+        \begin{enumerate}
+            \item \textit{without a chance to consult with anyone}
+            \item \textit{without any punishment for failing to keep AI contained}
+        \end{enumerate}
+        \cite[s. 203]{yampolskiy2012leakproofing}. Somit ist das Experiment nur wenig vergleichbar mit einem echten AI-Boxing,
+        da es die Realität nicht exakt in einem Modell abbildet.
+        Außerdem galten ebenfalls keine Einschränkungen im Bereich der Kommunikation:
+        \begin{enumerate}
+            \item \textit{communication itself was completely open with no filters of any kind}
+            \item \textit{no 3rd party supervision}
+        \end{enumerate}
+        \cite[s. 203]{yampolskiy2012leakproofing}. Außerdem verwirft Yudkowsky jeglichen wissenschaftlichen Mehrwert,
+        indem er sagt, dass es keine Aufzeichnungen des Experiments geben wird und keiner Aussagen, welche in dem
+        Experiment getroffen wurden jemals veröffentlichen darf \cite[s. 203]{yampolskiy2012leakproofing}.
+
+
+    \section{AI Boxing Strategies}
+        Wie zuvor erwähnt, kann es für eine KI verschiedene Möglichkeiten geben aus einem System auszubrechen. Um dies
+        zu verhindern, müssen Maßnahmen überlegt werden, sodass es nicht zu einem Ausbruch einer KI kommen kann.
 
         \subsection{Physical Boxing}
 
